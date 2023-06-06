@@ -8,7 +8,6 @@
 ---
 
 
-![lnow your tools](/assets/posts/tools.png)
 # Know your tools and you'll build great software.
 <sup>*Written 18 April 2023*<sup>
 

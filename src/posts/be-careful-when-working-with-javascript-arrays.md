@@ -8,7 +8,6 @@
 ---
 
 
-![Javascript arrays](/assets/posts/shallow-copies.png)
 # Be careful when working with JavaScript arrays!
 <sup>*Written 27 May 2023*<sup>
 
