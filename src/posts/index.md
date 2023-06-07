@@ -4,7 +4,6 @@ eleventyExcludeFromCollections: true
 layout: "base.njk"
 ---
 
-## Enjoy the post
 {% for post in collections.posts %}
 [{{ post.data.title }} *{{ post.data.dat }}* *{{ post.data.desc }}*]({{ post.url }})
 {% endfor %}
