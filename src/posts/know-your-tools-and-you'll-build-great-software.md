@@ -1,15 +1,14 @@
----json
-{
-	"title" : "Know your tools and you'll build great software",
-	"dat": "18 April 2023",
-	"desc": "clearly understand the tools you’re currently possessing...",
-	"layout": "eachpost.njk"
-}
+---
+title: Know your tools and you'll build great software
+date: 2023-04-18
+dat: 18-04-2023
+desc: clearly understand the tools you’re currently possessing
+layout: eachpost.njk
 ---
 
 
 # Know your tools and you'll build great software.
-<sup>*Written 18 April 2023*<sup>
+<sup>*18-04-2023*<sup>
 
 There are a lot of improvements and developments going on in the tech space. New technologies every day, new libraries every minute. All these newly released tools come with a promise to make things better, simple, and fast. And we developers are easily carried away by such promises.
 

@@ -1,15 +1,14 @@
----json
-{
-	"title" : "Be careful when working with JavaScript arrays!",
-	"dat": "27 May 2023",
-	"desc": "Javascript array methods don't do what you think they do!",
-	"layout": "eachpost.njk"
-}
+---
+title : Be careful when working with JavaScript arrays!
+date: 2023-05-27
+dat: 27-05-2023
+desc: Javascript array methods don't do what you think they do!
+layout: eachpost.njk
 ---
 
 
 # Be careful when working with JavaScript arrays!
-<sup>*Written 27 May 2023*<sup>
+<sup>*27-05-2023*<sup>
 
 As JavaScript developers, we work with arrays a lot. most of our data is represented in an array format. Whether in frameworks, libraries, or Vannila javascript we are always working with arrays. It is important to understand how arrays work before we shoot ourselves in the foot.
 

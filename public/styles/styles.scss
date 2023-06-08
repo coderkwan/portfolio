@@ -45,7 +45,7 @@
 }
 
 .recent_post_section {
-	margin: 80px 0px;
+	margin: 50px 0px;
 	display: flex;
 	align-items: center;
 	flex-direction: column;
@@ -53,21 +53,44 @@
 	.posts {
 		display: flex;
 		flex-direction: column;
-		gap: 23px;
+		gap: 2px;
 		padding-left: 0px;
-	}
+		margin-top: 0rem;
 
-	.each_post {
-		border: 1px solid #1c1c1c;
-		padding: 21px;
-		border-radius: 12px;
-		max-width: 700px;
-		background-color: #dcdcde;
-		color: #1c1c1c;
-		transition: all 0.2s ease;
+		p {
+			-webkit-user-select: none;
+			/* Safari */
+			-ms-user-select: none;
+			/* IE 10 and IE 11 */
+			user-select: none;
+			/* Standard syntax */
+		}
 
-		&:hover {
-			transform: translate(2px, 1px);
+		a {
+			border: 1px solid #1c1c1c;
+			padding: 21px;
+			border-radius: 12px;
+			display: flex;
+			flex-direction: column;
+			gap: 8px;
+			width: 100%;
+			background-color: #dcdcde;
+			color: #1c1c1c;
+			transition: all 0.2s ease;
+			font-weight: bold;
+
+			&:hover {
+				transform: translate(2px, 1px);
+			}
+
+			em {
+				font-weight: normal;
+
+				&:not(em:last-of-type) {
+					color: dodgerblue;
+				}
+			}
+
 		}
 	}
 }
@@ -135,6 +158,15 @@
 }
 
 .posts-page {
+	p {
+		-webkit-user-select: none;
+		/* Safari */
+		-ms-user-select: none;
+		/* IE 10 and IE 11 */
+		user-select: none;
+		/* Standard syntax */
+	}
+
 	a {
 		border: 1px solid #1c1c1c;
 		padding: 21px;
@@ -155,6 +187,10 @@
 
 	em {
 		font-weight: normal;
+
+		&:not(em:last-of-type) {
+			color: dodgerblue;
+		}
 	}
 }
 

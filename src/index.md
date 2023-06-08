@@ -1,10 +1,11 @@
 ---
 eleventyExcludeFromCollections: true
-layout: "base.njk"
+layout: "index.njk"
 pagination:
   data: collections.posts
-  size: 6
+  size: 3
 ---
+
 
 {% for post in pagination.items reversed %}
 [{{ post.data.title }} *{{ post.data.dat }}* *{{ post.data.desc }}*]({{ post.url }})
