@@ -94,7 +94,7 @@ ul {
   .recent_post_section .posts {
     display: flex;
     flex-direction: column;
-    gap: 2px;
+    gap: 20px;
     padding-left: 0px;
     margin-top: 0rem; }
     .recent_post_section .posts p {
@@ -103,7 +103,8 @@ ul {
       -ms-user-select: none;
       /* IE 10 and IE 11 */
       user-select: none;
-      /* Standard syntax */ }
+      /* Standard syntax */
+      margin: 0rem; }
     .recent_post_section .posts a {
       border: 1px solid #1c1c1c;
       padding: 21px;
@@ -154,7 +155,7 @@ ul {
   flex-direction: column;
   align-items: center;
   margin: 90px 0px;
-  gap: 10px; }
+  gap: 20px; }
 
 .posts-page p,
 .each-post-page p {
@@ -177,7 +178,8 @@ ul {
   -ms-user-select: none;
   /* IE 10 and IE 11 */
   user-select: none;
-  /* Standard syntax */ }
+  /* Standard syntax */
+  margin: 0rem; }
 
 .posts-page a {
   border: 1px solid #1c1c1c;
