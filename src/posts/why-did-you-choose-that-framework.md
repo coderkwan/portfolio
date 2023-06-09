@@ -2,7 +2,7 @@
 title : Why did you choose that framework?
 date: 2023-06-07
 dat: 08-06-2023
-desc: clearly understand the tools you're currently possessing
+desc: We have a bunch of choices to choose from but...
 layout: eachpost.njk
 ---
 
