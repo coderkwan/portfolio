@@ -3,7 +3,7 @@ eleventyExcludeFromCollections: true
 layout: "index.njk"
 pagination:
   data: collections.posts
-  size: 3
+  size: 6
 ---
 
 

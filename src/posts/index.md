@@ -6,6 +6,6 @@ pagination:
   size: 6
 ---
 
-{% for post in pagination.items reversed %}
+{% for post in collections.posts reversed %}
 [{{ post.data.title }} *{{ post.data.dat }}* *{{ post.data.desc }}*]({{ post.url }})
 {% endfor %}
