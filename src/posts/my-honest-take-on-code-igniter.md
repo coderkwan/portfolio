@@ -9,9 +9,9 @@ layout: eachpost.njk
 # My honest take on Code Igniter!
 <sup>*12-06-2023*<sup>
 
-Am currently busy with code igniter, yes that php framework nobody mentions on Twitter. I started checking their site and trying it 2 weeks ago after my boss told me that we might have to use it in the future to replace our current stack.
+I just finished building a simple [CRUD app](https://github.com/coderkwan/todoIgniter) with code igniter, yes that php framework nobody mentions on Twitter. I started checking their site and reading the docs two weeks ago after I heard some developers praising it's simplicity.
 
-As I do with a lot of new frameworks I learn I first go through the docs and see if I can understand anything without having to code it down. Usually, this technique works and helps me understand quickly when I am now learning the framework through building a simple app, Usually a [CRUD app](https://github.com/coderkwan/todoIgniter).
+As I do when learning any frameworks, I first go through the docs and see if I can understand anything without having to code it down. Usually, this technique works and helps me understand quickly when I am now learning the framework through building a simple app, Usually a [CRUD app](https://github.com/coderkwan/todoIgniter).
 
 As I went through the docs I was not impressed, there was so much lack of clarity. The documentation is not pleasingly structured. It takes a while to find what you are looking for. One obvious issue is that the search is not dynamic, You are sent to another page to view search results. Why are the results not displayed on a pop-up? Imagine searching for something and being referred to another page only to figure out that the results don't include what you are looking for. There are a lot of tools like Algolia which can make this simple.
 
