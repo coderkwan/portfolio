@@ -30,7 +30,7 @@ ul {
   padding: 12px 28px;
   background-color: #1c1c1c;
   color: white;
-  border-radius: 4px;
+  border-radius: 0px;
   transition: all 0.3s ease;
   margin-top: 20px; }
   .btn:hover {
@@ -82,8 +82,8 @@ ul {
     .hero__img-container img {
       height: 100px;
       width: 100px;
-      border-radius: 12px;
-      border: 3px solid #1c1c1c;
+      border-radius: 0px;
+      border: 1px solid #1c1c1c;
       box-shadow: 4px 4px 0px 0px #1c1c1c; }
 
 .recent_post_section {
@@ -108,15 +108,16 @@ ul {
     .recent_post_section .posts a {
       border: 1px solid #1c1c1c;
       padding: 21px;
-      border-radius: 12px;
+      border-radius: 0px;
       display: flex;
       flex-direction: column;
       gap: 8px;
       width: 100%;
-      background-color: #dcdcde;
+      background-color: #f4f4f4;
       color: #1c1c1c;
       transition: all 0.2s ease;
-      font-weight: bold; }
+      font-weight: bold;
+      box-shadow: 4px 4px 0px 2px #1c1c1c; }
       .recent_post_section .posts a:hover {
         transform: translate(2px, 1px); }
       .recent_post_section .posts a em {
@@ -139,8 +140,8 @@ ul {
   max-width: 450px;
   width: 100%;
   padding: 14px;
-  border: 1px solid #1c1c1c;
-  border-radius: 12px;
+  border: 3px solid #555555;
+  border-radius: 0px;
   color: #1c1c1c;
   transition: all 0.3s ease; }
   .each_project:hover {
@@ -184,15 +185,16 @@ ul {
 .posts-page a {
   border: 1px solid #1c1c1c;
   padding: 21px;
-  border-radius: 12px;
+  border-radius: 0px;
   display: flex;
   flex-direction: column;
   gap: 8px;
   width: 100%;
-  background-color: #dcdcde;
+  background-color: #f4f4f4;
   color: #1c1c1c;
   transition: all 0.2s ease;
-  font-weight: bold; }
+  font-weight: bold;
+  box-shadow: 4px 4px 0px 2px #1c1c1c; }
   .posts-page a:hover {
     transform: translate(2px, 1px); }
 
