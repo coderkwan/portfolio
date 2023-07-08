@@ -102,7 +102,9 @@ code {
     flex-direction: column;
     gap: 20px;
     padding-left: 0px;
-    margin-top: 0rem; }
+    margin-top: 0rem;
+    max-width: 600px;
+    width: 100%; }
     .recent_post_section .posts p {
       -webkit-user-select: none;
       /* Safari */

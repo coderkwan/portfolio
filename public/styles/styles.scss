@@ -40,7 +40,6 @@
 			border: 1px solid #1c1c1c;
 			box-shadow: 4px 4px 0px 0px #1c1c1c;
 		}
-
 	}
 }
 
@@ -56,6 +55,8 @@
 		gap: 20px;
 		padding-left: 0px;
 		margin-top: 0rem;
+		max-width: 600px;
+		width: 100%;
 
 		p {
 			-webkit-user-select: none;
@@ -92,7 +93,6 @@
 					color: dodgerblue;
 				}
 			}
-
 		}
 	}
 }
@@ -197,7 +197,6 @@
 		}
 	}
 }
-
 
 @media screen and (max-width: 900px) {
 	.recent_project_section {

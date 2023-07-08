@@ -1,19 +1,19 @@
 {
-  "name": "11ty",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "build": "eleventy",
-    "serve": "eleventy --serve",
-    "debug": "DEBUG=* npm eleventy",
-    "compile-sass": "node-sass public/styles/styles.scss public/styles.css -w"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "@11ty/eleventy": "^2.0.1",
-    "node-sass": "^9.0.0"
-  }
+	"name": "11ty",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"build": "eleventy",
+		"serve": "eleventy --serve",
+		"debug": "DEBUG=* npm eleventy",
+		"compile-sass": "node-sass public/styles/styles.scss public/styles.css -w"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"@11ty/eleventy": "^2.0.1",
+		"node-sass": "^9.0.0"
+	}
 }
