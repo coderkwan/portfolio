@@ -7,7 +7,6 @@ pagination:
   reverse: true
 ---
 
-
 {% for post in pagination.items %}
-[{{ post.data.title }} *{{ post.data.dat }}* *{{ post.data.desc }}*]({{ post.url }})
+[{{ post.data.title }} *{{ post.data.desc }}* *{{ post.data.dat }}*]({{ post.url }})
 {% endfor %}
