@@ -2,7 +2,7 @@
   box-sizing: border-box; }
 
 body {
-  max-width: 950px;
+  max-width: 870px;
   margin: 0px auto;
   padding: 2rem;
   font-family: "Poppins", sans-serif; }
@@ -180,7 +180,6 @@ code {
   line-height: 32px; }
 
 .each-post-page h1 {
-  max-width: 620px;
   font-size: 2rem; }
 
 .each-post-page img {
