@@ -2,9 +2,9 @@
 eleventyExcludeFromCollections: true
 layout: "index.njk"
 pagination:
-  data: collections.posts
-  size: 3
-  reverse: true
+    data: collections.posts
+    size: 5
+    reverse: true
 ---
 
 {% for post in pagination.items %}
