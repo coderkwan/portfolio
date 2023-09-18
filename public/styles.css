@@ -218,6 +218,8 @@ code {
 
 @media screen and (max-width: 900px) {
   .recent_project_section .projects {
+    grid-template-columns: auto auto; }
+  .project_page .projects {
     grid-template-columns: auto auto; } }
 
 @media screen and (max-width: 762px) {
@@ -230,6 +232,8 @@ code {
   .content h1 {
     font-size: 24px; }
   .recent_project_section .projects {
+    grid-template-columns: auto; }
+  .project_page .projects {
     grid-template-columns: auto; } }
 
 @media screen and (max-width: 550px) {
