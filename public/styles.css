@@ -161,8 +161,17 @@ code {
   .each_project:hover {
     opacity: 0.8; }
   .each_project img {
+    height: 140px;
+    width: 100%;
     max-width: 100%;
     object-fit: cover; }
+  .each_project__logos {
+    display: flex;
+    gap: 7px;
+    align-items: center; }
+    .each_project__logos img {
+      width: 30px;
+      height: 100%; }
 
 .posts-page,
 .each-post-page {
