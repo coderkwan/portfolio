@@ -1,5 +1,5 @@
 module.exports = (eleventyConfig) => {
-	
+
 	eleventyConfig.addPassthroughCopy("./src/styles.css")
 
 	return {
@@ -9,4 +9,3 @@ module.exports = (eleventyConfig) => {
 		}
 	}
 }
-
