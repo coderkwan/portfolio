@@ -4,7 +4,7 @@ layout: "base.njk"
 title: Posts by Kwanele Gamedze
 pagination:
   data: collections.posts
-  size: 6
+  size: 600
   reverse: true
 ---
 
