@@ -21,6 +21,9 @@ nav {
   height: 30px;
   width: 100%; }
 
+section {
+  margin-bottom: 4rem; }
+
 h1,
 h2,
 h3,
