@@ -18,4 +18,4 @@ The imposter feeling is a sign that there is more to learn. It is motivation. Mo
 
 Don't let the feeling lead you into disqualifying yourself. It should only remind you that there is always something new to learn. There are always new challenges to conquer.
 
-Never allow imposter syndrome to rob you of your confudence. Use it as fuel for growth.
+Never allow imposter syndrome to rob you of your confidence. Use it as fuel for growth.
