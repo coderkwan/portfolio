@@ -132,6 +132,33 @@ code {
     }
 }
 
+.recent_project_section,
+.projects {
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        padding: 0;
+    }
+
+    li {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        max-width: 250px;
+    }
+
+    a {
+        font-size: 18px;
+        margin-top: 4px;
+    }
+
+    img {
+        max-width: 100%;
+    }
+}
+
+
 @media screen and (max-width: 762px) {
     nav {
         justify-content: start;

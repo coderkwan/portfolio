@@ -104,6 +104,29 @@ code {
     max-width: 30px;
     width: 100%; }
 
+.recent_project_section ul,
+.projects ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 0; }
+
+.recent_project_section li,
+.projects li {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  max-width: 250px; }
+
+.recent_project_section a,
+.projects a {
+  font-size: 18px;
+  margin-top: 4px; }
+
+.recent_project_section img,
+.projects img {
+  max-width: 100%; }
+
 @media screen and (max-width: 762px) {
   nav {
     justify-content: start; }
