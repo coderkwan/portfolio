@@ -9,5 +9,10 @@ pagination:
 ---
 
 {% for post in pagination.items %}
- - [{{ post.data.title }} *{{ post.data.dat }}*]({{ post.url }})
+<li>
+  <a href={{ post.url }}>
+    <h4>{{ post.data.title }} </h4>
+    <p>{{ post.data.dat }} </p>
+  </a>
+</li>
 {% endfor %}
