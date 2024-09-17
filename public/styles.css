@@ -1,146 +1,185 @@
 * {
-  box-sizing: border-box; }
+    box-sizing: border-box;
+}
 
 body {
-  max-width: 870px;
-  margin: 0px auto;
-  padding: 2rem;
-  font-family: "Poppins", sans-serif;
-  background-color: #ebebeb; }
+    max-width: 830px;
+    margin: 0px auto;
+    padding: 2rem;
+    font-family: "Poppins", sans-serif;
+    background-color: #ebebeb;
+}
 
 nav {
-  display: grid;
-  justify-content: start;
-  align-items: center;
-  grid-template-columns: auto auto;
-  gap: 70px;
-  margin-bottom: 2rem; }
+    display: grid;
+    justify-content: start;
+    align-items: center;
+    grid-template-columns: auto auto;
+    gap: 70px;
+    margin-bottom: 2rem;
+}
 
 .navbar img {
-  max-width: 30px;
-  height: 30px;
-  width: 100%; }
+    max-width: 30px;
+    height: 30px;
+    width: 100%;
+}
 
 section {
-  margin-bottom: 4rem; }
+    margin-bottom: 4rem;
+}
 
 h1,
 h2,
 h3,
 h4 {
-  margin: 30px 0 0 0; }
+    margin: 30px 0 0 0;
+}
 
 h1 {
-  font-size: 2rem; }
+    font-size: 2rem;
+}
 
 p,
 ul,
 ol {
-  margin: 8px 0;
-  padding: 0;
-  line-height: 30px; }
+    margin: 8px 0;
+    padding: 0;
+    line-height: 30px;
+}
 
 ul {
-  padding-left: 25px; }
+    padding-left: 25px;
+}
 
 li {
-  margin: 5px 0; }
+    margin: 5px 0;
+}
 
 a {
-  text-decoration: none;
-  color: darkblue;
-  font-size: 16px;
-  transition: all 0.3s ease; }
+    text-decoration: none;
+    color: darkblue;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
 
 a em {
-  display: block;
-  color: black; }
+    display: block;
+    color: black;
+}
 
 a:visited,
 a:active {
-  text-decoration: none; }
+    text-decoration: none;
+}
 
 a:hover {
-  text-decoration: underline; }
+    text-decoration: underline;
+}
 
 code {
-  background: #e8e8e8;
-  font-style: italic;
-  padding: 0 8px;
-  border-radius: 4px; }
+    background: #e8e8e8;
+    font-style: italic;
+    padding: 0 8px;
+    border-radius: 4px;
+}
 
 .page {
-  margin: 2.5rem 0; }
+    margin: 2.5rem 0;
+}
 
 .links {
-  display: flex;
-  gap: 23px; }
+    display: flex;
+    gap: 23px;
+}
 
 .btn {
-  border-radius: 0px;
-  transition: all 0.3s ease;
-  margin-top: 20px;
-  width: fit-content;
-  font-size: 1.2rem;
-  text-decoration: underline;
-  color: black; }
+    border-radius: 0px;
+    transition: all 0.3s ease;
+    margin-top: 20px;
+    width: fit-content;
+    font-size: 1.2rem;
+    text-decoration: underline;
+    color: black;
+}
 
 .each-post-page img {
-  width: 100%; }
+    width: 100%;
+}
 
 .each-post-page p {
-  margin: 28px 0; }
+    margin: 28px 0;
+}
 
 .footer {
-  display: grid;
-  justify-content: start;
-  align-items: center;
-  grid-template-columns: auto auto;
-  gap: 70px;
-  border-top: 1px solid #1c1c1c;
-  padding: 50px 0;
-  margin-top: 100px; }
-  .footer img {
+    display: grid;
+    justify-content: start;
+    align-items: center;
+    grid-template-columns: auto auto;
+    gap: 70px;
+    border-top: 1px solid #1c1c1c;
+    padding: 50px 0;
+    margin-top: 100px;
+}
+
+.footer img {
     max-width: 30px;
-    width: 100%; }
+    width: 100%;
+}
 
 .recent_project_section ul,
 .projects ul {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  padding: 0; }
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 0;
+}
 
 .recent_project_section li,
 .projects li {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  max-width: 250px; }
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    max-width: 230px;
+}
 
 .recent_project_section a,
 .projects a {
-  font-size: 18px;
-  margin-top: 4px; }
+    font-size: 18px;
+    margin-top: 4px;
+}
 
 .recent_project_section img,
 .projects img {
-  max-width: 100%; }
+    max-width: 100%;
+}
 
 @media screen and (max-width: 762px) {
-  nav {
-    justify-content: start; }
-  .footer {
-    justify-content: start; }
-  body {
-    padding: 1rem; }
-  .content h1 {
-    font-size: 24px; } }
+    nav {
+        justify-content: start;
+    }
+
+    .footer {
+        justify-content: start;
+    }
+
+    body {
+        padding: 1rem;
+    }
+
+    .content h1 {
+        font-size: 24px;
+    }
+}
 
 @media screen and (max-width: 550px) {
-  nav {
-    grid-template-columns: auto;
-    gap: 1.5rem; }
-  .footer {
-    grid-template-columns: auto;
-    gap: 1.5rem; } }
+    nav {
+        grid-template-columns: auto;
+        gap: 1.5rem;
+    }
+
+    .footer {
+        grid-template-columns: auto;
+        gap: 1.5rem;
+    }
+}
