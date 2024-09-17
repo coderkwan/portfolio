@@ -7,8 +7,15 @@ body {
     margin: 0px auto;
     padding: 2rem;
     font-family: "Poppins", sans-serif;
-    background-color: #ebebeb;
+    background-color: #e2e8f0;
     color: #1f2937;
+}
+
+a {
+    text-decoration: none;
+    color: #701a75;
+    font-size: 16px;
+    transition: all 0.3s ease;
 }
 
 nav {
@@ -56,13 +63,6 @@ ul {
 
 li {
     margin: 5px 0;
-}
-
-a {
-    text-decoration: none;
-    color: #701a75;
-    font-size: 16px;
-    transition: all 0.3s ease;
 }
 
 a em {
@@ -243,6 +243,12 @@ code {
     .recent_project_section li,
     .projects li {
         max-width: 100%;
+    }
+
+    .posts li a {
+        flex-direction: column;
+        align-items: start;
+        flex-wrap: wrap;
     }
 }
 
