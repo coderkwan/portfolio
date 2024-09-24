@@ -47,25 +47,50 @@
                 <a href="https://twitter.com/coderkwan" target="_blank"><img src="/assets/twitter.png"
                         alt="twitter" /></a>
             </div>
+            <div class="menu_icon" id="menu_icon">
+                <img src="/assets/menu.png" alt="menu">
+            </div>
+            <div class="close_menu_icon" id="close_menu_icon">
+                <img src="/assets/close.png" alt="close menu">
+            </div>
+            <div id="mobile_nav">
+                <div class="mobile_links text">
+                    <a href="/posts">Blog</a>
+                    <a href="/projects">Projects</a>
+                    <a href="/now">Now</a>
+                    <a href="/about">About</a>
+                    <a href="/contact">Contact</a>
+                    <a href="/assets/KwaneleGamedze.pdf" target="_blank">CV</a>
+                </div>
+                <div class="mobile_links social">
+                    <a href="https://github.com/coderkwan" target="_blank"><img src="/assets/github.png"
+                            alt="github" /></a>
+                    <a href="https://linkedin.com/in/kwanelegamedze" target="_blank"><img src="/assets/linkedin.png"
+                            alt="linkedin" /></a>
+                    <a href="https://twitter.com/coderkwan" target="_blank"><img src="/assets/twitter.png"
+                            alt="twitter" /></a>
+                </div>
+            </div>
         </nav>
         <section class="page readable contact">
             <h1>☎️ I have been waiting for you!</h1>
             <p>Or you can send me an email: <em>kwanele at coderkwan dot com.</em></p>
-            <form action="">
+            <form id="contact_form">
                 <div class="form_element">
                     <label for="name">Full name</label>
-                    <input type="text" name="name">
+                    <input required type="text" name="name">
                 </div>
                 <div class="form_element">
                     <label for="name">Email</label>
-                    <input type="email" name="email">
+                    <input required type="email" name="email">
                 </div>
                 <div class="form_element">
                     <label for="name">Message</label>
-                    <textarea name="message" cols="30" rows="5"></textarea>
+                    <textarea required name="message" cols="30" rows="3"></textarea>
                 </div>
                 <button type="submit">Send Message</button>
             </form>
+            <p id="form_update" style="display: none; text-align: center; justify-content: center;"></p>
             <p>My response will find you in less than 72 hours!</p>
         </section>
     </main>
@@ -86,6 +111,8 @@
             <a href="https://twitter.com/coderkwan" target="_blank"><img src="/assets/twitter.png" alt="twitter" /></a>
         </div>
     </footer>
+    <script src="/script.js"></script>
+    <script src="/contact.js"></script>
 </body>
 
 </html>
