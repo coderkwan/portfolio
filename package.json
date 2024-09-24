@@ -11,5 +11,8 @@
     "devDependencies": {
         "@11ty/eleventy": "^2.0.1",
         "sass": "^1.78.0"
+    },
+    "dependencies": {
+        "@supabase/supabase-js": "^2.45.4"
     }
 }
