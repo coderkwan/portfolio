@@ -12,7 +12,7 @@ contact.addEventListener('submit', async (e) => {
     let name = e.target.name.value
     let message = e.target.message.value
 
-    const response = await fetch('http://localhost:3001/contact', {
+    const response = await fetch('https://king-prawn-app-cttf3.ondigitalocean.app/contact', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
