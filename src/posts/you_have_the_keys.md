@@ -2,7 +2,7 @@
 title: You have the keys
 date: 2024-09-22
 dat: 22-09-2024
-desc: THe ablity to succeed depends on you, you have the power to accomplish whatever you want.
+desc: The ablity to succeed depends on you, you have the power to accomplish whatever you want.
 layout: eachpost.njk
 ---
 
