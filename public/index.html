@@ -30,6 +30,9 @@
 <body id="bd">
     <main>
         <nav class="navbar">
+            <a href="/" class="logo">
+                <img src="./assets/twitter avater.png" alt="Kwanele Gamedze - coderkwan" />
+            </a>
             <div class="links">
                 <a href="/posts">Blog</a>
                 <a href="/projects">Projects</a>
@@ -46,84 +49,94 @@
             </div>
         </nav>
         <section class="hero">
-            <div class="hero__img-container">
-                <img src="./assets/twitter avater.png" alt="Kwanele Gamedze - coderkwan" />
-            </div>
             <div class="hero__content">
-                <h1>I solve problems through code.</h1>
+                <h1>I <span class="gradient-text">solve problems</span> through code.</h1>
                 <p>Hi! <em>Kwanele Gamedze</em> here. Interested in all-things Software Engineering, I am a strong
-                    advocate for
-                    simplicity and performance.
-                    Apart
-                    from programming, I spend most of my time reading and <a href="/posts">writing</a>, mostly about
-                    programming and other ideas of interest.
+                    advocate for simplicity and performance.
                 </p>
-            </div>
+                <button>Let&apos;s Work</button>
             </div>
         </section>
         <section>
             <div class="quick_links">
-                <div>
-                    <h2>Everything about me.</h2>
-                    <p>Checkout my <a href="/about">About page</a></p>
+                <div class="each_link">
+                    <h3>😊</h3>
+                    <h4>Everything about me.</h4>
+                    <p>Checkout my <a href="/about" class="inline_link">About page</a></p>
                 </div>
-                <div>
-                    <h2>What I am doing now.</h2>
-                    <p>Visit my <a href="/now">Now page</a></p>
+                <div class="each_link">
+                    <h3>⌛</h3>
+                    <h4>What I am doing now.</h4>
+                    <p>Visit my <a href="/now" class="inline_link">Now page</a></p>
                 </div>
             </div>
 
         </section>
         <section class="recent_post_section">
-            <h2>Here are my recent posts</h2>
+            <h2>My recent posts 📝</h2>
+            <p>Every man has the freedom to articulate what he thinks.</p>
             <ul class="posts">
                 <li>
                     <a href="/posts/you_have_the_keys/">
-                        <h4>You have the keys</h4>
                         <p>22-09-2024</p>
+                        <h4>You have the keys</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, nam. Unde libero nam esse
+                            eum maxime.</p>
                     </a>
                 </li>
                 <li>
                     <a href="/posts/write_about_anything/">
-                        <h4>Write about anything</h4>
                         <p>16-09-2024</p>
+                        <h4>Write about anything</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, nam. Unde libero nam esse
+                            eum maxime.</p>
                     </a>
                 </li>
                 <li>
                     <a href="/posts/how_to_deploy_a_laravel_website_on_digital_ocean/">
+                        <p>08-09-2024</p>
                         <h4>How to deploy a Laravel website
                             on Digital Ocean</h4>
-                        <p>08-09-2024</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, nam. Unde libero nam esse
+                            eum maxime.</p>
                     </a>
                 </li>
                 <li>
-                    <a href="/posts/limitless/">
-                        <h4>Permitted limitations</h4>
-                        <p>05-09-2024</p>
+                    <a href="/posts/how_to_deploy_a_laravel_website_on_digital_ocean/">
+                        <p>08-09-2024</p>
+                        <h4>How to deploy a Laravel website
+                            on Digital Ocean</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, nam. Unde libero nam esse
+                            eum maxime.</p>
                     </a>
                 </li>
             </ul>
             <a class="btn" href="/posts">See all posts</a>
         </section>
         <section class="recent_project_section">
-            <h2>My recent projects</h2>
+            <h2>My recent projects ⚒️</h2>
+            <p>A man&apos;s heart is seen in his work.</p>
             <ul>
                 <li>
-                    <img src="assets/projects/dbsight_cover.png" alt="dbsight image">
                     <a href="/dbsight">
-                        Database admin app
+                        <img src="assets/projects/dbsight_cover.png" alt="dbsight image">
+                        <h5>Database admin app</h5>
+                        <p>A simple app for interacting with your Database, an alternative to PhpMyadmin.</p>
                     </a>
-                    <p>A simple app for interacting with your Database, an alternative to PhpMyadmin.</p>
                 </li>
                 <li>
-                    <img src="assets/projects/invoice_pay.png" alt="invoice pay image">
-                    <a target="_blank" href="https://invoice-pay-32lyt.ondigitalocean.app/">Invoice Builder</a>
-                    <p>A web app for making pdf invoices for free.</p>
+                    <a target="_blank" href="https://invoice-pay-32lyt.ondigitalocean.app/">
+                        <img src="assets/projects/invoice_pay.png" alt="invoice pay image">
+                        <h5>Invoice Builder</h5>
+                        <p>A web app for making pdf invoices for free.</p>
+                    </a>
                 </li>
                 <li>
-                    <img src="assets/projects/api.png" alt="api image">
-                    <a target="_blank" href="https://apiyzer.vercel.app">Api tester</a>
-                    <p>A simple web app for testing RESTapi end points.</p>
+                    <a target="_blank" href="https://apiyzer.vercel.app">
+                        <img src="assets/projects/api.png" alt="api image">
+                        <h5>Api tester</h5>
+                        <p>A simple web app for testing RESTapi end points.</p>
+                    </a>
                 </li>
             </ul>
             <a class="btn" href="/projects">View all projects</a>
