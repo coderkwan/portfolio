@@ -28,6 +28,5 @@ app.post('/contact', async (req, res) => {
     }
 })
 
-app.listen(3001, () => {
-    console.log('Lest gooooo')
+app.listen(process.env.PORT, () => {
 })
