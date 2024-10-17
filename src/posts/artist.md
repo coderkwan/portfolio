@@ -1,12 +1,12 @@
 ---
-title: The artist in her own world
+title: The artist, in her own world
 date: 2024-10-17
 dat: 17-10-2024
 desc: Art is the work of a genuine heart, art is the true reflection of the artist.
 layout: eachpost.njk
 ---
 
-# The artist in her world
+# The artist, in her own world
 
 <sup>_17-10-2024_<sup>
 
