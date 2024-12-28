@@ -428,6 +428,9 @@ nav {
 .btn img {
     width: 30px;
 }
+.journals { display:flex; flex-direction:column; gap:20px }
+.journals .bold {font-weight:bold; margin: 20px 0; font-size:20px;}
+.journals .journal_body { margin-left:30px; }
 
 .btn_container {
     display: flex;
