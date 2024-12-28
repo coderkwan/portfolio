@@ -1,0 +1,4 @@
+{
+	"tags" : "journal",
+	"layout" :"base_journal.njk"
+}
