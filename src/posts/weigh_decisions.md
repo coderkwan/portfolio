@@ -14,7 +14,7 @@ I've just discovered a quick and simple method for achieving goals; **Don't focu
 
 Position yourself in a place where success will flow to you. **Be in a position where you deserve your goals**. If you want to be happy, don't directly go for happiness, find things that happy people do, places where they hang out and how they think. 
 
-A good starting point, on the road to happiness, will be eliminating or limiting activities or people who make you sad. And it's not easy, we humans do a lot of things out of habit, even the things that make us unhappy. A good approach, that has worked for me, is **questioning every decision you make against the goals you want to achieve**.
+A good starting point, on the road to happiness, will be eliminating or limiting activities or people who make you sad. And it's not easy, we humans do a lot of things out of habit, even the things that make us unhappy. A good approach, that has worked for me, is to **question every decision you make against the goals you want to achieve**.
 
 If you want perfect health; ask yourself, before eating anything; is this food/snack increasing the odds of me being healthy? If yes then consume, if no then discard. This is the same for every goal; money, love, happiness e.t.c.
 
