@@ -1,14 +1,14 @@
 ---
 title: Weigh your decisions against your goals
 date: 2025-02-16
-dat: 16-02-2025
+dat: 17-02-2025
 desc: Everything you do should be propeling you towards your goals. 
 layout: eachpost.njk
 ---
 
 # Weigh your decisions against your goals
 
-<sup>_16-02-2025_<sup>
+<sup>_17-02-2025_<sup>
 
 I've just discovered a quick and simple method for achieving goals; **Don't focus on attaining the goal, focus on increasing the odds**. 
 
