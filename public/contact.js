@@ -10,6 +10,7 @@ contact.addEventListener('submit', async (e) => {
 
     let email = e.target.email.value
     let name = e.target.name.value
+    let phone = e.target.phone.value
     let message = e.target.message.value
 
     const response = await fetch('https://king-prawn-app-cttf3.ondigitalocean.app/contact', {
@@ -17,7 +18,7 @@ contact.addEventListener('submit', async (e) => {
         headers: {
             'Content-Type': 'application/json',
         },
-        body: JSON.stringify({name, email, message}),
+        body: JSON.stringify({name, phone, email, message}),
     });
 
     const result = await response.json();

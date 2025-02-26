@@ -143,8 +143,9 @@ button,
 .btn,
 .btn-primary {
     padding: 12px 34px;
+    width: fit-content;
     border: none;
-    border-radius: 8px;
+    border-radius: 40px;
     background-color: var(--primary);
     color: var(--text-light);
     font-size: 16px;
@@ -249,6 +250,31 @@ nav {
     margin-top: 40px;
 }
 
+.hero__content h1 {
+    font-size: 2rem;
+    font-weight: lighter;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.hero__content h1:first-of-type {
+    font-weight: bold;
+}
+
+.hero__content .btn-primary {
+    margin-top: 22px;
+}
+
+.about_me h2 {
+    font-weight: lighter;
+    font-size: 2.2rem;
+}
+
+.about_me .shift {
+    color: var(--text-light);
+    background-color: var(--bg-dark);
+}
+
 .quick_links {
     display: flex;
     justify-content: center;
@@ -298,7 +324,7 @@ nav {
 .recent_post_section ul li a,
 .posts li a {
     display: block;
-    border: 1px solid var(--border-dark);
+    /* border: 1px solid var(--primary); */
     border-radius: 12px;
     padding: 12px 24px;
     background-color: #eef2ff;
@@ -327,35 +353,66 @@ nav {
 .recent_project_section ul {
     display: grid;
     gap: 10px;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: 1fr 1fr;
     list-style: none;
     padding: 0px;
 }
 
-.recent_project_section ul li a {
+.recent_project_section ul a {
     display: block;
     text-align: left;
     display: flex;
     flex-direction: column;
+    background-color: black;
     border: 1px solid var(--border-dark);
     padding: 12px 22px;
     border-radius: 12px;
-    background-color: #faf5ff;
     height: 100%;
-}
-
-.recent_project_section ul li img {
-    height: 160px;
+    min-height: 300px;
     width: 100%;
-    object-fit: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: space-between;
+
 }
 
-.recent_project_section ul li p {
+.recent_project_section .project_text {}
+
+.recent_project_section .project_text p {
     font-size: 14px;
-    line-height: 18px;
-    line-height: 19px;
-    color: #475569;
+    line-height: 16px;
 }
+
+.recent_project_section .project_text h5 {
+    font-size: 16px;
+    margin: 0;
+}
+
+.recent_project_section .tags {
+    display: flex;
+    justify-content: end;
+    gap: 12px;
+}
+
+.recent_project_section .tags p {}
+
+.recent_project_section .tags p {
+    color: var(--text-light);
+    border-radius: 50px;
+    border: 1px solid var(--text-light);
+    padding: 0px 22px;
+}
+
+.recent_project_section h5 {
+    color: white;
+    font-size: 1.2rem;
+}
+
+.recent_project_section p {
+    color: white;
+}
+
 
 .recent_project_section .btn {
     background-color: #faf5ff;
@@ -428,9 +485,22 @@ nav {
 .btn img {
     width: 30px;
 }
-.journals { display:flex; flex-direction:column; gap:20px }
-.journals .bold {font-weight:bold; margin: 20px 0; font-size:20px;}
-.journals .journal_body { margin-left:30px; }
+
+.journals {
+    display: flex;
+    flex-direction: column;
+    gap: 20px
+}
+
+.journals .bold {
+    font-weight: bold;
+    margin: 20px 0;
+    font-size: 20px;
+}
+
+.journals .journal_body {
+    margin-left: 30px;
+}
 
 .btn_container {
     display: flex;
@@ -513,6 +583,20 @@ iframe {
 
     body {
         padding: 1rem;
+    }
+
+    .hero__content {
+        align-items: start;
+        text-align: left;
+        justify-content: start;
+    }
+
+    .about_me h2 {
+        font-size: 1.7rem;
+    }
+
+    .hero__content h1 {
+        font-size: 1.5rem;
     }
 
     .content h1 {

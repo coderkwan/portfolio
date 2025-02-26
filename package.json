@@ -13,6 +13,7 @@
         "sass": "^1.78.0"
     },
     "dependencies": {
-        "@supabase/supabase-js": "^2.45.4"
+        "@supabase/supabase-js": "^2.45.4",
+        "node-sass": "^9.0.0"
     }
 }
