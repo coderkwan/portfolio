@@ -135,6 +135,10 @@ a:hover {
     opacity: 0.7;
 }
 
+.posts a:hover {
+    border: 1px solid var(--primary);
+}
+
 .inline_link {
     color: var(--tertiary);
 }
@@ -273,6 +277,8 @@ nav {
 .about_me .shift {
     color: var(--text-light);
     background-color: var(--bg-dark);
+    border-radius: 6px;
+    padding: 0px 12px;
 }
 
 .quick_links {
@@ -297,6 +303,10 @@ nav {
 .each_link h3 {
     margin-top: 0;
     font-size: 30px;
+}
+
+.recent_post_section h2 {
+    text-transform: uppercase;
 }
 
 .recent_post_section {
@@ -324,7 +334,7 @@ nav {
 .recent_post_section ul li a,
 .posts li a {
     display: block;
-    /* border: 1px solid var(--primary); */
+    border: 1px solid #eef2ff;
     border-radius: 12px;
     padding: 12px 24px;
     background-color: #eef2ff;
@@ -377,7 +387,6 @@ nav {
 
 }
 
-.recent_project_section .project_text {}
 
 .recent_project_section .project_text p {
     font-size: 14px;
@@ -395,7 +404,6 @@ nav {
     gap: 12px;
 }
 
-.recent_project_section .tags p {}
 
 .recent_project_section .tags p {
     color: var(--text-light);
