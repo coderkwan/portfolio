@@ -28,6 +28,10 @@ body {
     text-align: center;
 }
 
+.contact a {
+    color: var(--tertiary);
+}
+
 .contact button {
     width: 100%;
 }
