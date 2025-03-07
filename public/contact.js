@@ -13,7 +13,7 @@ contact.addEventListener('submit', async (e) => {
     let phone = e.target.phone.value
     let message = e.target.message.value
 
-    const response = await fetch('https://king-prawn-app-cttf3.ondigitalocean.app/contact', {
+    const response = await fetch('https://portfolio-contact-server-jv9v.onrender.com/contact', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
