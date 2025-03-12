@@ -1,12 +1,24 @@
 :root {
-    --bg-light: #ffffff;
-    --bg-dark: #0f172a;
+    --bg: #f0f0ff;
+    --bg-light: #f0f0ff;
+    --bg-dark: #13131c;
+    --text: #1f2937;
     --text-light: #e5e7eb;
     --text-dark: #1f2937;
     --primary: #4f46e5;
     --secondary: #1e1b4b;
-    --border-dark: #d1d5db;
-    --border-light: #f3f4f6;
+    --tertiary: #e91e63;
+}
+
+.dark-mode {
+    --bg: #13131c;
+    --bg-light: #f0f0ff;
+    --bg-dark: #13131c;
+    --text: #e5e7eb;
+    --text-light: #e5e7eb;
+    --text-dark: #1f2937;
+    --primary: #4f46e5;
+    --secondary: #1e1b4b;
     --tertiary: #e91e63;
 }
 
@@ -20,8 +32,8 @@ body {
     margin: 0px auto;
     padding: 2rem;
     font-family: "Poppins", sans-serif;
-    background-color: var(--bg-light);
-    color: var(--text-dark);
+    background-color: var(--bg);
+    color: var(--text);
 }
 
 .contact {
