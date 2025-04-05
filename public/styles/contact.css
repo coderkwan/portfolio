@@ -1,0 +1,39 @@
+.contact {
+    text-align: center;
+}
+
+.contact a {
+    color: var(--tertiary);
+}
+
+.contact button {
+    width: 100%;
+}
+
+.contact em {
+    color: var(--primary);
+}
+
+form {
+    margin: 30px 0;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form_element {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.form_element input,
+textarea {
+    outline: none;
+    font-family: inherit;
+    border: 1px solid var(--border-dark);
+    padding: 8px 20px;
+    border-radius: 8px;
+    font-size: 18px;
+}
