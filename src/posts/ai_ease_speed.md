@@ -2,7 +2,7 @@
 title: Artificial Intelligence, Ease and Speed
 date: 2025-04-03
 dat: 03-04-2025
-desc: We have to find ways in which AI can make our daily lives easier.
+desc: Artificial Intelligence, like other innovations, is here to make our lives easier, if you use it correctly. 
 layout: eachpost.njk
 ---
 
@@ -23,10 +23,10 @@ Think of AI as an enhancement tool not a replacement tool. Machinery did not tak
 The beef with AI is that people are going to lose their jobs, people are going to be more stupid. Well, that’s not entirely the case. Yes the jobs part will change; new job titles will emerge, old titles will be irrelevant. Things that were time consuming will be now easier, boring tasks will be automated.
 
 
-Artificial intelligence is a tool. Like every other tool, created to make things better, to bring improvement. In no time it will part of our everyday usage and it will unlock more passivities for future innovations.
+Artificial intelligence is a tool. Like every other tool, created to make things better, to bring improvement. In no time it will part of our everyday usage and it will unlock more possibilities for future innovations.
 
 
-You role is to find, in your daily life, that boring tasks, the difficult tasks and see if AI cannot ease your burdens. But you should never ever compromise quality. If you can do it better than AI then do it yourself.
+You role is to find, in your daily life, the boring tasks, the difficult tasks and see if AI cannot ease your burdens. But you should never ever compromise quality. If you can do it better than AI then do it yourself.
 
 
 Change is hard, the sooner you embrace it, the better.

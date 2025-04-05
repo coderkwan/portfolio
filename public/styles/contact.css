@@ -1,5 +1,25 @@
 .contact {
-    text-align: center;
+    /* text-align: center; */
+    max-width: 800px;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space4);
+
+    .text {
+        display: flex;
+        flex-direction: column;
+        gap: var(--space3);
+
+        p {
+            line-height: 110%;
+            margin: 0;
+        }
+    }
+
+    h1 {
+        font-size: var(--text4);
+    }
 }
 
 .contact a {
@@ -19,7 +39,7 @@ form {
     text-align: left;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 18px;
 }
 
 .form_element {
@@ -32,8 +52,10 @@ form {
 textarea {
     outline: none;
     font-family: inherit;
-    border: 1px solid var(--border-dark);
-    padding: 8px 20px;
+    border: 2px solid var(--card_bg);
+    padding: 12px 20px;
     border-radius: 8px;
     font-size: 18px;
+    background-color: var(--card_bg);
+    color: var(--text);
 }

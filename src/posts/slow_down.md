@@ -1,12 +1,12 @@
 ---
-title: Slow Down and Be Happy
+title: Slow down and be happy
 date: 2025-03-22
 dat: 22-03-2025
 desc: Don't be swallowed by work. Move slow accomplish more.
 layout: eachpost.njk
 ---
 
-# Slow down and Be Happy
+# Slow down and be happy
 
 <sup>_22-03-2025_<sup>
 
