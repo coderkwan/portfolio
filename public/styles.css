@@ -203,6 +203,16 @@ button:hover {
     opacity: 0.8;
 }
 
+.alert {
+    background-color: var(--primary);
+    font-size: 12px;
+    padding: 4px 30px;
+    border-radius: 30px;
+    width: fit-content;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 10%;
+}
 
 nav {
     display: grid;

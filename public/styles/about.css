@@ -1,0 +1,17 @@
+.about_card {
+    display: flex;
+    flex-direction: column;
+    gap: 2;
+    padding: var(--space5);
+    border-radius: 12px;
+    background-color: var(--card_bg);
+
+    p {
+        font-size: 14px;
+        line-height: 180%;
+    }
+}
+
+section {
+    margin: 3rem 0rem;
+}
