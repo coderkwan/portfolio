@@ -1,5 +1,4 @@
-/node_modules
-/public/api/node_modules
-/public/api/.env
+node_modules
+api/node_modules
+api/.env
 .env
-/.env
