@@ -14,4 +14,4 @@ We are in an information age, where quantity triumphs over quality, Where art an
 
 It's now hard to come across good stuff, It's hard to stumble upon originality.
 
-But when you do come across the good stuff, the good blog, the good music, the good book, the good clip,the good quote, the good movie; **Consume it. Think about it. Save it. Share it, Re-visit it.**
+But when you do come across the good stuff, the good blog, the good music, the good book, the good clip, the good quote, the good movie; **Consume it. Think about it. Treasure it. Save it. Share it, Re-visit it.**
