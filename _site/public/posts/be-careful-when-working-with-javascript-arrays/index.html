@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Be careful when working with JavaScript arrays!</title>
+	<meta name="description" content=Javascript array methods don&#39;t do what you think they do! >
+	<link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+	<main>
+	<nav class="navbar">
+			<div class="links">
+				<a href="/" >Home</a>
+				<a href="/posts" >Blog</a>
+				<a href="/projects" >Projects</a>
+			</div>
+			<div class="links">
+				<a href="https://github.com/coderkwan" target="_blank"><img src="/assets/github.png" alt="github" /></a>
+				<a href="https://linkedin.com/in/kwanelegamedze" target="_blank"><img src="/assets/linkedin.png"
+						alt="linkedin" /></a>
+				<a href="https://twitter.com/coderkwan" target="_blank"><img src="/assets/twitter.png"
+						alt="twitter" /></a>
+				<a href="https://medium.com/@coderkwan" target="_blank"><img src="/assets/medium.png"
+				alt="medium" /></a>
+				<a href="mailto:kwanelegamedze4@gmail.com" target="_blank"><img src="/assets/email.png"
+						alt="email" /></a>
+			</div>
+		</nav>
+		<section class="each-post-page">
+			<div>
+				<h1>Be careful when working with JavaScript arrays!</h1>
+<p><sup><em>Written 27 May 2023</em><sup></p>
+<p>As JavaScript developers, we work with arrays a lot. most of our data is represented in an array format. Whether in frameworks, libraries, or Vannila javascript we are always working with arrays. It is important to understand how arrays work before we shoot ourselves in the foot.</p>
+<p>Dealing with arrays in javascript seems like an easy task a lot of us easily understand how to create arrays modify arrays and create copies of arrays. The last part; copying arrays is very crucial because there is a lot going on under the hood. You should be very careful when duplicating or copying arrays, mostly <em>arrays of objects</em>.</p>
+<p><img src="/assets/posts/shallow-copies1.png" alt="Javascript arrays of objects!"></p>
+<p>The above code does a simple thing; creates a car array that contains 2 objects. then we 'create' a new array (other_cars) using the spread operator to fill it with the contents of the car array. This looks like we have 2 individual arrays but unfortunately no, the contents of the cars array and other_cars array are in the same memory location, meaning if you modify the object contents of one array the other one will be modified as well because <em>the contents are in the same memory address</em>.</p>
+<p><img src="/assets/posts/shallow-copies2.png" alt="Arrays in javascript!"></p>
+<p>In the above code, we didn't explicitly modify the cars array, we only modified other_cars, but how did the cars array change?
+It's because we only created a <strong>shallow copy</strong> (the contents are at the same memory address ). This is not an issue with the spread operator but it is exactly true for other popular array methods and operations such as; <em>array.concat(), array.slice(), Array.from()</em>.
+<br/><br/></p>
+<h2>What's the alternative?</h2>
+<p>If you know you'll be modifying objects of your array, don't create a <strong>shallow copy</strong> but create a <strong>deep copy</strong>. The easy way of creating a deep copy is using <em>JSON.stringify</em> then <em>JSON.parse</em> which creates a completely separate array.</p>
+<p><img src="/assets/posts/shallow-copies3.png" alt="Arrays in Javascript!"></p>
+<p>Now we have created a new array, a <strong>deep copy</strong>. contents of cars exist on their own and *they can't be affected by modifications done to the other_cars array.</p>
+<p><img src="/assets/posts/shallow-copies4.png" alt="Arrays in Javascript!"></p>
+
+			</div>
+		</section>
+	</main>
+	<footer class="footer">
+		<div class="links">
+				<a href="/" >Home</a>
+				<a href="/posts" >Blog</a>
+				<a href="/projects" >Projects</a>
+			</div>
+			<div class="links">
+				<a href="https://github.com/coderkwan" target="_blank"><img src="/assets/github.png" alt="github" /></a>
+				<a href="https://linkedin.com/in/kwanelegamedze" target="_blank"><img src="/assets/linkedin.png"
+						alt="linkedin" /></a>
+				<a href="https://twitter.com/coderkwan" target="_blank"><img src="/assets/twitter.png"
+						alt="twitter" /></a>
+				<a href="https://medium.com/@coderkwan" target="_blank"><img src="/assets/medium.png"
+				alt="medium" /></a>
+				<a href="mailto:kwanelegamedze4@gmail.com" target="_blank"><img src="/assets/email.png"
+						alt="email" /></a>
+			</div>
+	</footer>
+</body>
+</html>

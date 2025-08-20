@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{ title }}</title>
+    <meta name="description"
+        content="This is a portfolio website for Kwanele Gamedze aka coderkwan. Kwanele Gamedze also known as coderkwan is a Software Engineer focusing on building perfomant and simple software. Kwanele Gamedze or coderkwan also writes blog posts about different software engineering concepts from low level programming to web development. Welcome to kwanele Gamedze's website. Kwanele Gamedze goes with the username of coderkwan in may social media platforms." />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css" />
+    <link rel="stylesheet" href="/styles/blog.css" />
+</head>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-BV1BT9D6NB"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-BV1BT9D6NB');
+</script>
+
+
+<body>
+    <main>
+        <nav class="navbar">
+            <a href="/" class="logo">
+                <img src="/assets/twitter-avater.webp" alt="Kwanele Gamedze - coderkwan" />
+            </a>
+            <div class="links">
+                <a href="/posts">Blog</a>
+                <a href="/projects">Projects</a>
+                <a href="/about">About</a>
+                <a href="/contact">Contact</a>
+            </div>
+            <div class="links">
+                <a href="https://github.com/coderkwan" target="_blank"><img src="/assets/github.png" alt="github" /></a>
+                <a href="https://linkedin.com/in/kwanelegamedze" target="_blank"><img src="/assets/linkedin.png"
+                        alt="linkedin" /></a>
+                <a href="https://twitter.com/coderkwan" target="_blank"><img src="/assets/twitter.png"
+                        alt="twitter" /></a>
+            </div>
+            <div class="menu_icon" id="menu_icon">
+                <img src="/assets/menu.png" alt="menu">
+            </div>
+            <div class="close_menu_icon" id="close_menu_icon">
+                <img src="/assets/close.png" alt="close menu">
+            </div>
+            <div id="mobile_nav">
+                <div class="mobile_links text">
+                    <a href="/posts">Blog</a>
+                    <a href="/projects">Projects</a>
+                    <a href="/about">About</a>
+                    <a href="/contact">Contact</a>
+                </div>
+                <div class="mobile_links social">
+                    <a href="https://github.com/coderkwan" target="_blank"><img src="/assets/github.png"
+                            alt="github" /></a>
+                    <a href="https://linkedin.com/in/kwanelegamedze" target="_blank"><img src="/assets/linkedin.png"
+                            alt="linkedin" /></a>
+                    <a href="https://twitter.com/coderkwan" target="_blank"><img src="/assets/twitter.png"
+                            alt="twitter" /></a>
+                </div>
+            </div>
+        </nav>
+        <h2>All my blog posts</h2>
+        <p>Words are free. It's how you use them that may cost you. - Unknown</p>
+        <div class="grid2">
+            {{ content | safe }}
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="links">
+            <a href="/">Home</a>
+            <a href="/posts">Blog</a>
+            <a href="/projects">Projects</a>
+            <a href="/about">About</a>
+            <a href="/contact">Contact</a>
+        </div>
+        <div class="links">
+            <a href="https://github.com/coderkwan" target="_blank"><img src="/assets/github.png" alt="github" /></a>
+            <a href="https://linkedin.com/in/kwanelegamedze" target="_blank"><img src="/assets/linkedin.png"
+                    alt="linkedin" /></a>
+            <a href="https://twitter.com/coderkwan" target="_blank"><img src="/assets/twitter.png" alt="twitter" /></a>
+        </div>
+
+    </footer>
+    <script src="/script.js"></script>
+</body>
+
+</html>

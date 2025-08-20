@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Save yourself from fixing bugs</title>
+    <meta name="description" content=How we write code will determine how much we will have to fix bugs>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="/styles/blog.css">
+</head>
+
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-BV1BT9D6NB"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-BV1BT9D6NB');
+</script>
+
+
+<body>
+    <main>
+        <nav class="navbar">
+            <a href="/" class="logo">
+                <img src="/assets/twitter-avater.webp" alt="Kwanele Gamedze - coderkwan" />
+            </a>
+            <div class="links">
+                <a href="/posts">Blog</a>
+                <a href="/projects">Projects</a>
+                <a href="/about">About</a>
+                <a href="/contact">Contact</a>
+            </div>
+            <div class="links">
+                <a href="https://github.com/coderkwan" target="_blank"><img src="/assets/github.png" alt="github" /></a>
+                <a href="https://linkedin.com/in/kwanelegamedze" target="_blank"><img src="/assets/linkedin.png"
+                        alt="linkedin" /></a>
+                <a href="https://twitter.com/coderkwan" target="_blank"><img src="/assets/twitter.png"
+                        alt="twitter" /></a>
+            </div>
+            <div class="menu_icon" id="menu_icon">
+                <img src="/assets/menu.png" alt="menu">
+            </div>
+            <div class="close_menu_icon" id="close_menu_icon">
+                <img src="/assets/close.png" alt="close menu">
+            </div>
+            <div id="mobile_nav">
+                <div class="mobile_links text">
+                    <a href="/posts">Blog</a>
+                    <a href="/projects">Projects</a>
+                    <a href="/about">About</a>
+                    <a href="/contact">Contact</a>
+                </div>
+                <div class="mobile_links social">
+                    <a href="https://github.com/coderkwan" target="_blank"><img src="/assets/github.png"
+                            alt="github" /></a>
+                    <a href="https://linkedin.com/in/kwanelegamedze" target="_blank"><img src="/assets/linkedin.png"
+                            alt="linkedin" /></a>
+                    <a href="https://twitter.com/coderkwan" target="_blank"><img src="/assets/twitter.png"
+                            alt="twitter" /></a>
+                </div>
+            </div>
+        </nav>
+        <section class="each-post-page">
+            <div>
+                <h1>Save yourself from fixing bugs</h1>
+<p><sup><em>24-09-2023</em><sup></p>
+<p>The most common cause of bugs in software is the lack of caution in initial development. We rush to make things work without considering possible downsides and different case scenarios.</p>
+<p>I sometimes find myself doing this a lot. Initially, I just hack to make sure the desired results are produced. And usually, this does not take a lot time.</p>
+<p>The problem comes when I have to add functionality to that code; It becomes very hard. And in most cases it means having to rewrite the entire logic, which will obviously take a lot time.</p>
+<p>I prefer that we spend more time initially, making sure that the code works perfectly, and can be easily modified or scaled.</p>
+<p>The code we write should be flexible enough that it can be easily updated without breaking other parts of the software. That's why we have to make everything modular; each piece of functionality should exist individually. You should be able to play with it without messing up the entire codebase.</p>
+<p>This should be done from the first line of code we write, while the codebase is extremely small. Once that codebase is enormous nobody will want to mess with it.</p>
+<p>In a huge, unstable codebase, when a bug is found, it can only be fixed through fragile patches, which will obviously introduce more bugs. Save yourself, aim for modularity and perfection from the start.</p>
+
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="links">
+            <a href="/">Home</a>
+            <a href="/posts">Blog</a>
+            <a href="/projects">Projects</a>
+            <a href="/about">About</a>
+            <a href="/contact">Contact</a>
+        </div>
+        <div class="links">
+            <a href="https://github.com/coderkwan" target="_blank"><img src="/assets/github.png" alt="github" /></a>
+            <a href="https://linkedin.com/in/kwanelegamedze" target="_blank"><img src="/assets/linkedin.png"
+                    alt="linkedin" /></a>
+            <a href="https://twitter.com/coderkwan" target="_blank"><img src="/assets/twitter.png" alt="twitter" /></a>
+        </div>
+    </footer>
+    <script src="/script.js"></script>
+</body>
+
+</html>

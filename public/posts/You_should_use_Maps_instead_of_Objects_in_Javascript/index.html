@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>You should use Maps instead of Objects in JavaScript</title>
+    <meta name="description" content=There are may ways of storing related data in JavaScript, I prefer Maps.>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="/styles/blog.css">
+</head>
+
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-BV1BT9D6NB"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-BV1BT9D6NB');
+</script>
+
+
+<body>
+    <main>
+        <nav class="navbar">
+            <a href="/" class="logo">
+                <img src="/assets/twitter-avater.webp" alt="Kwanele Gamedze - coderkwan" />
+            </a>
+            <div class="links">
+                <a href="/posts">Blog</a>
+                <a href="/projects">Projects</a>
+                <a href="/about">About</a>
+                <a href="/contact">Contact</a>
+            </div>
+            <div class="links">
+                <a href="https://github.com/coderkwan" target="_blank"><img src="/assets/github.png" alt="github" /></a>
+                <a href="https://linkedin.com/in/kwanelegamedze" target="_blank"><img src="/assets/linkedin.png"
+                        alt="linkedin" /></a>
+                <a href="https://twitter.com/coderkwan" target="_blank"><img src="/assets/twitter.png"
+                        alt="twitter" /></a>
+            </div>
+            <div class="menu_icon" id="menu_icon">
+                <img src="/assets/menu.png" alt="menu">
+            </div>
+            <div class="close_menu_icon" id="close_menu_icon">
+                <img src="/assets/close.png" alt="close menu">
+            </div>
+            <div id="mobile_nav">
+                <div class="mobile_links text">
+                    <a href="/posts">Blog</a>
+                    <a href="/projects">Projects</a>
+                    <a href="/about">About</a>
+                    <a href="/contact">Contact</a>
+                </div>
+                <div class="mobile_links social">
+                    <a href="https://github.com/coderkwan" target="_blank"><img src="/assets/github.png"
+                            alt="github" /></a>
+                    <a href="https://linkedin.com/in/kwanelegamedze" target="_blank"><img src="/assets/linkedin.png"
+                            alt="linkedin" /></a>
+                    <a href="https://twitter.com/coderkwan" target="_blank"><img src="/assets/twitter.png"
+                            alt="twitter" /></a>
+                </div>
+            </div>
+        </nav>
+        <section class="each-post-page">
+            <div>
+                <h1>You should use Maps instead of Objects in JavaScript.</h1>
+<p><sup><em>28-01-2024</em><sup></p>
+<p>When having a collection of related data or functionality, it is always a good idea to store such in a container. In javaScript, the most common collections are Arrays and Objects. Objects keep everything organized through the use of custom keys as indexes, and you can store values of any type. Objects makes it easier to reference your data.</p>
+<p><img src="/assets/posts/1map.png" alt="" title="javascript object example"></p>
+<p>Apart from Objects, there is another interesting collection type in JavaScript; a Map, an object-like collection with super powers. The first thing that caught my attention when I first saw Maps was the syntax. It is more cleaner and obvious to whoever reads the code.</p>
+<p>Here is how you create a map</p>
+<p><img src="/assets/posts/2map.png" alt="" title="javascript maps syntax"></p>
+<p>Add and get properties in/from the Map</p>
+<p><img src="/assets/posts/3map.png" alt="" title="javascript maps syntax"></p>
+<h2>Maps are empty by default</h2>
+<p>If you create a new object with no keys and values, by default that object is not empty. It has a prototype, there are already key-to-value pairs that exist in your object, which you did not create.</p>
+<p><img src="/assets/posts/4map.png" alt="" title="javascript object prototype"></p>
+<p>In the above example we are able to call <code>constructor</code> and <code>toString</code> which we did not create, we only created the <code>name</code> property.</p>
+<p>However, Maps give you full control over your data. A new Map is completely empty by default. It has no prototype, you are responsible for adding or removing data in your Map. This makes Maps safer because there will never be unexpected behavior like prototype overriding.
+JavaScript does offer a way of creating null-prototype objects, but it's good to have that by default;
+Here is an example of how to create an empty object.</p>
+<p><img src="/assets/posts/5map.png" alt="" title="javascript null-prototype object"></p>
+<h2>Iterable</h2>
+<p>Maps are iterable by default, while objects are not. To iterate through a Map; use <code>for...of</code>. Each iteration returns an array with 2 items; the first is the key and the second is the value.</p>
+<p><img src="/assets/posts/6map.png" alt="" title="javascript maps iteration using for of"></p>
+<p>To iterate through an object you have to use <code>Object.keys</code> or<code> Object.entries</code> which both returns an iterable that allows you to use <code>for...of</code>. There seems to be always extra work with objects compared to Maps.
+You can use <code>for...in</code> which iterate through the keys and not the actual object.</p>
+<p><img src="/assets/posts/8map.png" alt="" title="javascript object iteration using for in"></p>
+<p>This is not only with iterations but even getting the size or length of an object you have to count the keys using <code>Object.keys(object).length</code>. With Maps there is a builtin property <code>size</code> which returns the length or size of the map.</p>
+<p><img src="/assets/posts/7map.png" alt="" title="javascript map size property"></p>
+<h2>Keys can be anything</h2>
+<p>When adding items into your objects, the key can only be strings or symbols. although you can try to make your key a number or any type, but it is always converted into a string</p>
+<p><img src="/assets/posts/9map.png" alt="" title="javascript object keys converted to string"></p>
+<p>Maps can have keys of any type; strings, numbers, functions, objects, arrays, etc.</p>
+<p><img src="/assets/posts/10map.png" alt="" title="javascript map keys con be any type"></p>
+<h2>Conclusion</h2>
+<p>With all the above advantages on Maps, I believe you'll start using them more often than objects. Old habits die hard, but we have to use the right tool to for the right job. On storing key-value pairs, Maps are better than objects.</p>
+<p>Reference : <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map">mdn web docs</a></p>
+
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="links">
+            <a href="/">Home</a>
+            <a href="/posts">Blog</a>
+            <a href="/projects">Projects</a>
+            <a href="/about">About</a>
+            <a href="/contact">Contact</a>
+        </div>
+        <div class="links">
+            <a href="https://github.com/coderkwan" target="_blank"><img src="/assets/github.png" alt="github" /></a>
+            <a href="https://linkedin.com/in/kwanelegamedze" target="_blank"><img src="/assets/linkedin.png"
+                    alt="linkedin" /></a>
+            <a href="https://twitter.com/coderkwan" target="_blank"><img src="/assets/twitter.png" alt="twitter" /></a>
+        </div>
+    </footer>
+    <script src="/script.js"></script>
+</body>
+
+</html>

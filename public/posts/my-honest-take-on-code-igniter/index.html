@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My honest take on Code Igniter!</title>
+    <meta name="description" content=My worst experiance since i started writting code.>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="/styles/blog.css">
+</head>
+
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-BV1BT9D6NB"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-BV1BT9D6NB');
+</script>
+
+
+<body>
+    <main>
+        <nav class="navbar">
+            <a href="/" class="logo">
+                <img src="/assets/twitter-avater.webp" alt="Kwanele Gamedze - coderkwan" />
+            </a>
+            <div class="links">
+                <a href="/posts">Blog</a>
+                <a href="/projects">Projects</a>
+                <a href="/about">About</a>
+                <a href="/contact">Contact</a>
+            </div>
+            <div class="links">
+                <a href="https://github.com/coderkwan" target="_blank"><img src="/assets/github.png" alt="github" /></a>
+                <a href="https://linkedin.com/in/kwanelegamedze" target="_blank"><img src="/assets/linkedin.png"
+                        alt="linkedin" /></a>
+                <a href="https://twitter.com/coderkwan" target="_blank"><img src="/assets/twitter.png"
+                        alt="twitter" /></a>
+            </div>
+            <div class="menu_icon" id="menu_icon">
+                <img src="/assets/menu.png" alt="menu">
+            </div>
+            <div class="close_menu_icon" id="close_menu_icon">
+                <img src="/assets/close.png" alt="close menu">
+            </div>
+            <div id="mobile_nav">
+                <div class="mobile_links text">
+                    <a href="/posts">Blog</a>
+                    <a href="/projects">Projects</a>
+                    <a href="/about">About</a>
+                    <a href="/contact">Contact</a>
+                </div>
+                <div class="mobile_links social">
+                    <a href="https://github.com/coderkwan" target="_blank"><img src="/assets/github.png"
+                            alt="github" /></a>
+                    <a href="https://linkedin.com/in/kwanelegamedze" target="_blank"><img src="/assets/linkedin.png"
+                            alt="linkedin" /></a>
+                    <a href="https://twitter.com/coderkwan" target="_blank"><img src="/assets/twitter.png"
+                            alt="twitter" /></a>
+                </div>
+            </div>
+        </nav>
+        <section class="each-post-page">
+            <div>
+                <h1>My honest take on Code Igniter!</h1>
+<p><sup><em>12-06-2023</em><sup></p>
+<p>I just finished building a simple <a href="https://github.com/coderkwan/todoIgniter">CRUD app</a> with code igniter, yes that php framework nobody mentions on Twitter. I started checking their site and reading the docs two weeks ago after I heard some developers praising it's simplicity.</p>
+<p>As I do when learning any frameworks, I first go through the docs and see if I can understand anything without having to code it down. Usually, this technique works and helps me understand quickly when I am now learning the framework through building a simple app, Usually a <a href="https://github.com/coderkwan/todoIgniter">CRUD app</a>.</p>
+<p>As I went through the docs I was not impressed, there was so much lack of clarity. The documentation is not pleasingly structured. It takes a while to find what you are looking for. One obvious issue is that the search is not dynamic, You are sent to another page to view search results. Why are the results not displayed on a pop-up? Imagine searching for something and being referred to another page only to figure out that the results don't include what you are looking for. There are a lot of tools like Algolia which can make this simple.</p>
+<h2>The Nail In The Coffin</h2>
+<p>As developers, we make a lot of mistakes and often we are aided by the compiler which tells us the bug, where it's located, and how we can fix it. Sadly not with code igniter. Every error fails silently. If a view takes a dynamic variable, and you forget to send it down through the controller code igniter won't tell you the exact error, they show you a white page that says <code>try again later</code>.</p>
+<p><img src="/assets/posts/woops.png" alt="" title="whoops"></p>
+<p>Which is strange. This is a poor design choice and an obvious sign it is not a suitable framework for bigger projects. If errors are not concise debugging can be hard.</p>
+<p>When I was writing a Controller class, I created a bug while trying to insert data in the database. And as you can guess code igniter only displayed a white page with <code>Whoops</code>.</p>
+<p><img src="/assets/posts/woops.png" alt="" title="whoops"></p>
+<p>They failed to tell me about the error. I had to read my code line by line trying to figure out my mistake, I have to rely Google for help.</p>
+<p>And I discovered that I am not the only one worried about their silent error handling. As I was searching the internet, obviously trying to fix a bug which code igniter wouldn't even tell me where the bug is. I came across this,</p>
+<p><img src="/assets/posts/igniter.png" alt="" title="whoops"></p>
+<p>When you have to rely on Google and have to re-read your entire codebase for debugging, it consumes a lot of time, and it's not worth it. Especially when there are alternatives. As I was building this simple <a href="https://github.com/coderkwan/todoIgniter">CRUD app</a> I had to create the Database table and columns manually because I failed to run migrations, and spent almost 2 hours trying to get it to work. I failed. Why was it hard; code igniter never outputs an error message, It just shows me that migrates are complete.</p>
+<p><img src="/assets/posts/migrate.png" alt="" title="whoops"></p>
+<p>Obviously, I approached Code Igniter with an attitude because I have, before, tested the goodness of Laravel which I am a big fan of despite not using it in any live project. And code Igniter exceeded my expectations of it being incompetent, it is indeed beyond bad.</p>
+
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="links">
+            <a href="/">Home</a>
+            <a href="/posts">Blog</a>
+            <a href="/projects">Projects</a>
+            <a href="/about">About</a>
+            <a href="/contact">Contact</a>
+        </div>
+        <div class="links">
+            <a href="https://github.com/coderkwan" target="_blank"><img src="/assets/github.png" alt="github" /></a>
+            <a href="https://linkedin.com/in/kwanelegamedze" target="_blank"><img src="/assets/linkedin.png"
+                    alt="linkedin" /></a>
+            <a href="https://twitter.com/coderkwan" target="_blank"><img src="/assets/twitter.png" alt="twitter" /></a>
+        </div>
+    </footer>
+    <script src="/script.js"></script>
+</body>
+
+</html>

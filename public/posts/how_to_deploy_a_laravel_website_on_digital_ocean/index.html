@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to deploy a Laravel website on Digital Ocean</title>
+    <meta name="description" content=This is a walk through tutorial on how to deploy a Laravel website on Digital Ocean>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="/styles/blog.css">
+</head>
+
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-BV1BT9D6NB"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-BV1BT9D6NB');
+</script>
+
+
+<body>
+    <main>
+        <nav class="navbar">
+            <a href="/" class="logo">
+                <img src="/assets/twitter-avater.webp" alt="Kwanele Gamedze - coderkwan" />
+            </a>
+            <div class="links">
+                <a href="/posts">Blog</a>
+                <a href="/projects">Projects</a>
+                <a href="/about">About</a>
+                <a href="/contact">Contact</a>
+            </div>
+            <div class="links">
+                <a href="https://github.com/coderkwan" target="_blank"><img src="/assets/github.png" alt="github" /></a>
+                <a href="https://linkedin.com/in/kwanelegamedze" target="_blank"><img src="/assets/linkedin.png"
+                        alt="linkedin" /></a>
+                <a href="https://twitter.com/coderkwan" target="_blank"><img src="/assets/twitter.png"
+                        alt="twitter" /></a>
+            </div>
+            <div class="menu_icon" id="menu_icon">
+                <img src="/assets/menu.png" alt="menu">
+            </div>
+            <div class="close_menu_icon" id="close_menu_icon">
+                <img src="/assets/close.png" alt="close menu">
+            </div>
+            <div id="mobile_nav">
+                <div class="mobile_links text">
+                    <a href="/posts">Blog</a>
+                    <a href="/projects">Projects</a>
+                    <a href="/about">About</a>
+                    <a href="/contact">Contact</a>
+                </div>
+                <div class="mobile_links social">
+                    <a href="https://github.com/coderkwan" target="_blank"><img src="/assets/github.png"
+                            alt="github" /></a>
+                    <a href="https://linkedin.com/in/kwanelegamedze" target="_blank"><img src="/assets/linkedin.png"
+                            alt="linkedin" /></a>
+                    <a href="https://twitter.com/coderkwan" target="_blank"><img src="/assets/twitter.png"
+                            alt="twitter" /></a>
+                </div>
+            </div>
+        </nav>
+        <section class="each-post-page">
+            <div>
+                <h1>How to deploy a Laravel website on Digital Ocean</h1>
+<p><sup><em>08-03-2024</em><sup></p>
+<p>This post assumes that you already know the basics of Laravel and you have a Digital Ocean's account. If you don't have an account; <a href="https://m.do.co/c/1e4c77d1fc93">sign up</a> ( there are some free credits, no need to pay at first. ). And to learn more about Laravel; check their awesome <a href="https://Laravel.com/docs">docs</a>.</p>
+<h2>Set up a Laravel app</h2>
+<p>First let's create a Laravel app. You can skip this part if you already have an app built, and just focus on the next configuration steps.</p>
+<p><code>composer create Laravel/Laravel my_cool_app</code></p>
+<p>Install dependencies</p>
+<p><code>cd my_cool_app &amp;&amp; npm install</code></p>
+<p>Update the following .env variables to match your local or development database. We have to make sure the app works locally before we push it to production.</p>
+<p><img src="/assets/posts/1.png" alt="" title="deploy laravel on digital ocean"></p>
+<p>Start your local servers with <code>npm run dev</code> and <code>php artisan serve</code>.
+If your app runs well, then we off to a good start.</p>
+<h2>Adding routes</h2>
+<p>I will just add an extra <code>about</code> route for this demonstration.</p>
+<p><em><strong>web.php</strong></em>
+<img src="/assets/posts/14.png" alt=""></p>
+<p>Both my views are rendering one <code>h1</code> tag.</p>
+<p><em><strong>welcome.blade.php</strong></em>
+<img src="/assets/posts/15.png" alt="" title="deploy laravel on digital ocean"></p>
+<p><em><strong>about.blade.php</strong></em>
+<img src="/assets/posts/16.png" alt="" title="deploy laravel on digital ocean"></p>
+<h2>Make sure vite is configured correctly</h2>
+<p>If you notice on the above views; I am using vite to include my custom css file.
+<code>@vite(['resouces/css/custom.css'])</code></p>
+<p>I need to make sure that I include this file in the<code>vite.config.js</code> inputs array:</p>
+<p><em><strong>vite.config.js</strong></em>
+<img src="/assets/posts/17.png" alt="" title="deploy laravel on digital ocean"></p>
+<h2>Enforce https on production</h2>
+<p>Our final step will be enforcing https for secure connections on production.
+Let up update our app service provider <code>app/Providers/AppServiceProvider.php</code>.</p>
+<p><em><strong>app/Providers/AppServiceProvider.php</strong></em>
+<img src="/assets/posts/18.png" alt="" title="deploy laravel on digital ocean"></p>
+<h2>Deploying to Digital Ocean</h2>
+<p>Now that everything is set locally. Make sure you push your code to github. And Digital Ocean will point to that repository.</p>
+<h3>Create App Platform</h3>
+<p>On the top right of your Digital Ocean dashboard, click the create button and choose app platform.</p>
+<p><img src="/assets/posts/2.png" alt="" title="deploy laravel on digital ocean"></p>
+<h3>Link repository</h3>
+<p>On the following page, chose your repo, branch and make sure auto deployment is turned on for continuous integration.
+Click the next button.</p>
+<p><img src="/assets/posts/3.png" alt="" title="deploy laravel on digital ocean"></p>
+<h3>Choosing resources</h3>
+<p>Now you'll see a summary of your resources, click edit on the resource we just created.</p>
+<p><img src="/assets/posts/4.png" alt="" title="deploy laravel on digital ocean"></p>
+<p>We want to change the Resource Size, <em>choose the $5 resource size</em> or any suitable one.</p>
+<p><img src="/assets/posts/5.png" alt="" title="deploy laravel on digital ocean"></p>
+<p>We also have to update the Build Phase; by adding our build commands. <em>Click edit</em>.
+And on the build commands dialog paste <code>composer install &amp;&amp; npm run build</code>.</p>
+<p><img src="/assets/posts/6.png" alt="" title="deploy laravel on digital ocean"></p>
+<p>Make sure to click save every after an edit.</p>
+<h3>Adding environment variables</h3>
+<p>Let's continue to step 2; click Environment variables on the left side bar.</p>
+<p><img src="/assets/posts/7.png" alt="" title="deploy laravel on digital ocean"></p>
+<p>Click edit, next to your Laravel app , <strong>not next to Global</strong>.</p>
+<p>Add all the following variables.</p>
+<p>For the APP_KEY, copy your local key from the .env file. (The key can be generated by <code>php artisan key:generate</code>).</p>
+<p><img src="/assets/posts/8.png" alt="" title="deploy laravel on digital ocean"></p>
+<p>Save and click next.</p>
+<p>On the info section you can change the region to your desired region and also the name of your Laravel app.
+<img src="/assets/posts/info.png" alt="" title="deploy laravel on digital ocean"></p>
+<h3>Now deploy your Laravel app</h3>
+<p>Check the review tab, and make sure that you happy with all the updates.
+Then scroll down and <em>create resource</em>.</p>
+<p><img src="/assets/posts/create.png" alt="" title="deploy laravel on digital ocean"></p>
+<p>Wait for the build to finish.</p>
+<p><img src="/assets/posts/10.png" alt="" title="deploy laravel on digital ocean"></p>
+<p>Once the build and deployment process is done, click on 'Live App'.
+Boom! Your Laravel app is deployed on Digital Ocean, and it's up an running!</p>
+<p><img src="/assets/posts/11.png" alt="" title="deploy laravel on digital ocean">
+<img src="/assets/posts/12.png" alt="" title="deploy laravel on digital ocean"></p>
+<h2>Running migrations or other production commands</h2>
+<p>If you want to run a migration or a command in the production environment;
+Below your project click console and type the desired commands.</p>
+<p><img src="/assets/posts/13.png" alt="" title="deploy laravel on digital ocean"></p>
+<p>This demo project is also on <a href="https://github.com/coderkwan/my_cool_app">github</a>.</p>
+
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="links">
+            <a href="/">Home</a>
+            <a href="/posts">Blog</a>
+            <a href="/projects">Projects</a>
+            <a href="/about">About</a>
+            <a href="/contact">Contact</a>
+        </div>
+        <div class="links">
+            <a href="https://github.com/coderkwan" target="_blank"><img src="/assets/github.png" alt="github" /></a>
+            <a href="https://linkedin.com/in/kwanelegamedze" target="_blank"><img src="/assets/linkedin.png"
+                    alt="linkedin" /></a>
+            <a href="https://twitter.com/coderkwan" target="_blank"><img src="/assets/twitter.png" alt="twitter" /></a>
+        </div>
+    </footer>
+    <script src="/script.js"></script>
+</body>
+
+</html>
