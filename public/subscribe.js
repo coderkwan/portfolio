@@ -1,26 +1,24 @@
 
-const contact = document.getElementById('contact_form')
 const form_update = document.getElementById('form_update')
+const subscribe = document.getElementById('subscribe_form')
 
-contact.addEventListener('submit', async (e) => {
+subscribe.addEventListener('submit', async (e) => {
     e.preventDefault()
     form_update.style.display = 'flex'
     form_update.style.color = '#3b82f6'
     form_update.innerText = 'Hold tight 🔃...'
 
     let email = e.target.email.value
-    let name = e.target.name.value
-    let message = e.target.message.value
 
-    let url = 'https://portfolio-contact-server-jv9v.onrender.com/contact'
-    // let url = 'http://localhost:3001/contact'
+    let url = 'https://portfolio-contact-server-jv9v.onrender.com/subscribe'
+    // let url = 'http://localhost:3001/subscribe'
 
     const response = await fetch(url, {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
         },
-        body: JSON.stringify({name, email, message}),
+        body: JSON.stringify({email}),
     });
 
     const result = await response.json();

@@ -4,18 +4,18 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact coderkwan - Kwanele Gamedze</title>
+    <title>Kwanele Gamedze</title>
     <meta name="description"
-        content="Who is Kwanele Gamedze, who is coderkwan? This is the page that tells everything you need to know about Kwanele Gamedze who goes by the alias of coderkwan. He is a programmer who also loves writting, reading and learning the piano." />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        content="This is a personal website for Kwanele Gamedze. Kwanele Gamedze is a Writer, Illustrator and Programmer. Kwanele Gamedze writes blog posts about different concepts from productivity to philosophy and happiness. Welcome to kwanele Gamedze's website. Kwanele Gamedze also enjoys reading." />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
-        rel="stylesheet" />
+        rel="stylesheet">
     <link rel="stylesheet" href="/styles.css" />
-    <link rel="stylesheet" href="/styles/contact.css" />
+    <link rel="stylesheet" href="/styles/blog.css" />
+    <link rel="stylesheet" href="/styles/home.css" />
 </head>
-
 
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-BV1BT9D6NB"></script>
@@ -28,7 +28,7 @@
 </script>
 
 
-<body id="bd">
+<body>
     <main>
         <nav class="navbar">
             <a href="/" class="logo">
@@ -70,31 +70,25 @@
                 </div>
             </div>
         </nav>
-        <section class="contact">
-            <div class="text">
-                <h1>☎️ Let's Talk</h1>
-                <p>Or you can send me an email: <em>kwanele at coderkwan dot com.</em></p>
+        <div class="hero">
+            <div class="hero_intro">
+                <h1>Hi I am Kwanele Gamedze!</h1>
+                <p>I enjoy writing, drawing and programming.</p>
             </div>
-            <form id="contact_form">
-                <div class="form_element">
-                    <label for="name">Full name</label>
-                    <input required type="text" name="name">
-                </div>
-                <div class="form_element">
-                    <label for="name">Email</label>
-                    <input required type="email" name="email">
-                </div>
-                <div class="form_element">
-                    <label for="name">Message</label>
-                    <textarea required name="message" cols="30" rows="3"></textarea>
-                </div>
-                <button type="submit" class="btn">Send Message</button>
-            </form>
-            <div>
-                <p id="form_update" style="display: none; text-align: center; justify-content: center;"></p>
-                <p>My response will find you in less than 24 hours!</p>
+            <div class="hero_form">
+                <form id="subscribe_form">
+                    <div class="field">
+                        <label for="email">Get a mini-essay every Monday, Join My Newsletter!</label>
+                        <input class="input" type="email" name="email" placeholder="your@email.com" required>
+                    </div>
+                    <button class="btn" type="submit">Subscribe</button>
+                    <p id="form_update" style="display: none; font-size:16px"></p>
+                </form>
             </div>
-        </section>
+        </div>
+        <div class="grid2">
+            {{ content | safe }}
+        </div>
     </main>
     <footer class="footer">
         <div class="links">
@@ -110,9 +104,10 @@
                     alt="linkedin" /></a>
             <a href="https://twitter.com/coderkwan" target="_blank"><img src="/assets/twitter.png" alt="twitter" /></a>
         </div>
+
     </footer>
     <script src="/script.js"></script>
-    <script src="/contact.js"></script>
+    <script src="/subscribe.js"></script>
 </body>
 
 </html>

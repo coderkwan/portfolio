@@ -35,45 +35,6 @@
 
 }
 
-.dark-mode {
-    --bg: #13131c;
-    --bg-light: #f0f0ff;
-    --bg-dark: #13131c;
-    --text: #e5e7eb;
-    --text-light: #e5e7eb;
-    --text-dark: #1f2937;
-    --primary: #4f46e5;
-    --secondary: #1e1b4b;
-    --tertiary: #e91e63;
-    /* --card_bg: #100e2e; */
-    --card_bg: #212833;
-
-    .navbar {
-        .links {
-            img {
-                padding: 4px;
-                background-color: var(--accent_light);
-                border-radius: 8px;
-            }
-        }
-    }
-
-    .mobile_links {
-        img {
-            padding: 4px;
-            background-color: var(--accent_light);
-            border-radius: 8px;
-        }
-    }
-
-    .menu_icon,
-    .close_menu_icon {
-        padding: 4px;
-        background-color: var(--accent_light);
-        border-radius: 8px;
-    }
-}
-
 /* Globals */
 * {
     box-sizing: border-box;

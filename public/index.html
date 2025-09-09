@@ -2,23 +2,19 @@
 <html lang="en">
 
 <head>
-    <!-- ahref -->
-    <script src="https://analytics.ahrefs.com/analytics.js" data-key="FeoS7yVmiJkcNTHg3x0fCA" async></script>
-    <!-- ahref end -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="canonical" href="https://coderkwan.com/" />
-    <link rel="icon" href="favicon.ico" />
-    <title>Kwanele Gamedze - coderkwan</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kwanele Gamedze</title>
     <meta name="description"
-        content="This is a portfolio website for Kwanele Gamedze aka coderkwan. Kwanele Gamedze also known as coderkwan is a Software Engineer focusing on building perfomant and simple software. Kwanele Gamedze or coderkwan also writes blog posts about different software engineering concepts from low level programming to web development. Welcome to kwanele Gamedze's website. Kwanele Gamedze goes with the username of coderkwan in may social media platforms." />
+        content="This is a personal website for Kwanele Gamedze. Kwanele Gamedze is a Writer, Illustrator and Programmer. Kwanele Gamedze writes blog posts about different concepts from productivity to philosophy and happiness. Welcome to kwanele Gamedze's website. Kwanele Gamedze also enjoys reading." />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="./styles/home.css">
+    <link rel="stylesheet" href="/styles.css" />
+    <link rel="stylesheet" href="/styles/blog.css" />
+    <link rel="stylesheet" href="/styles/home.css" />
 </head>
 
 <!-- Google tag (gtag.js) -->
@@ -31,11 +27,12 @@
     gtag('config', 'G-BV1BT9D6NB');
 </script>
 
-<body id="bd">
+
+<body>
     <main>
         <nav class="navbar">
             <a href="/" class="logo">
-                <img src="./assets/twitter-avater.webp" alt="Kwanele Gamedze - coderkwan" />
+                <img src="/assets/twitter-avater.webp" alt="Kwanele Gamedze - coderkwan" />
             </a>
             <div class="links">
                 <a href="/posts">Blog</a>
@@ -44,7 +41,6 @@
                 <a href="/contact">Contact</a>
             </div>
             <div class="links">
-                <!-- <button id="switch_theme">Switch</button> -->
                 <a href="https://github.com/coderkwan" target="_blank"><img src="/assets/github.png" alt="github" /></a>
                 <a href="https://linkedin.com/in/kwanelegamedze" target="_blank"><img src="/assets/linkedin.png"
                         alt="linkedin" /></a>
@@ -74,112 +70,200 @@
                 </div>
             </div>
         </nav>
-        <main class="hero">
-            <div class="hero__content">
-                <h1>Using <span class="fency_text">Technology</span> to<br> Make Our Lives <span
-                        class="fency_text">Easier.</span></h1>
-                <p>My main focus is building websites that will help you achieve your goals, reach more customers and
-                    generate more sales. I am a result oriented problem solver. </p>
-                <a href="/contact" class="btn-primary">Let&apos;s Work Together</a>
+        <div class="hero">
+            <div class="hero_intro">
+                <h1>Hi I am Kwanele Gamedze!</h1>
+                <p>I enjoy writing, drawing and programming.</p>
             </div>
-        </main>
-        <section class="recent_projects">
-            <a class="project_box main_project" href="/projects/shipsmart">
-                <div class="content_container " style="background-image: url(assets/projects/shipsmart.webp);">
-                    <div class="tags">
-                        <p>Website</p>
-                        <p>Courier</p>
+            <div class="hero_form">
+                <form id="subscribe_form">
+                    <div class="field">
+                        <label for="email">Get a mini-essay every Monday, Join My Newsletter!</label>
+                        <input class="input" type="email" name="email" placeholder="your@email.com" required>
                     </div>
-                    <div class="project_text">
-                        <h5>Ship Smart Freight</h5>
-                        <p>A basic website for a Courier campany based in Eswatini.</p>
-                    </div>
-                </div>
-            </a>
-            <div class="grid2">
-                <a class="project_box" href="/projects/ptiforex">
-                    <div class="content_container" style="background-image: url(assets/projects/ptiforex.webp);">
-                        <div class="tags">
-                            <p>Website</p>
-                            <p>Finance</p>
-                        </div>
-                        <div class="project_text">
-                            <h5>Pti Forex</h5>
-                            <p>A landing page for a forex trading academy.</p>
-                        </div>
-                    </div>
-                </a>
-                <a class="project_box" href="/projects/mealsoff">
-                    <div class="content_container" style="background-image: url(assets/projects/mealsoff.webp);">
-                        <div class="tags">
-                            <p>Website</p>
-                            <p>Food</p>
-                        </div>
-                        <div class="project_text" style="">
-                            <h5>Meals Off</h5>
-                            <p>A website where you will find your next meal recipe.</p>
-                        </div>
-                    </div>
-                </a>
+                    <button class="btn" type="submit">Subscribe</button>
+                    <p id="form_update" style="display: none; font-size:16px"></p>
+                </form>
             </div>
-            <a class="btn-primary" href="/projects">View all projects</a>
-        </section>
-        <section class="about_me">
-            <div class="about_me__container">
-                <img src="./assets/me.webp" width="300px" alt=" A picture of Kwanele Gamedze">
-                <div class="content">
-                    <div>
-                        <h2>A Little About Me</h2>
-                        <p>I am Kwanele Gamedze. A freelance website developer. I enjoy helping other <span
-                                class="shift">brands
-                                achieve their goals</span>
-                            through my digital expertise. My main goal is to build <span class="shift">websites that
-                                will
-                                produce
-                                visible results</span>,
-                            websites that will draw <span class="shift">more customers</span> and increase <span
-                                class="shift">more
-                                sales.</span> Digital experiences that will <span class="shift">benefit
-                                you and your customers.</span></p>
-                    </div>
-                    <a href="/about" class="btn btn_white">More About Me</a>
-                </div>
-            </div>
-        </section>
-        <section class="recent_post_section">
-            <div>
-                <h2>From my blog</h2>
-                <p>Every man has the freedom to articulate what he thinks.</p>
-            </div>
-            <div class="grid2">
+        </div>
+        <div class="grid2">
+              <a class="post_box" href=/posts/pleasure/>
+    <p>01-09-2025 </p>
+    <h4>Give me pleasure </h4>
+    <p>The good is of old, we are the new, we are the dying. </p>
+  </a>
+  <a class="post_box" href=/posts/work_never_ends/>
+    <p>18-08-2025 </p>
+    <h4>Work never ends, forget the to-do list </h4>
+    <p>You don't have to structure your day as if you had infinite time. </p>
+  </a>
+  <a class="post_box" href=/posts/stack_experiences/>
+    <p>28-07-2025 </p>
+    <h4>Stack experiences not regret </h4>
+    <p>We are afraid of trying new things, we fear to fail, we rob ourselves of experience </p>
+  </a>
+  <a class="post_box" href=/posts/who_you_are/>
+    <p>12-07-2025 </p>
+    <h4>Be who you are </h4>
+    <p>Your actions must resemble what you profess to be. </p>
+  </a>
+  <a class="post_box" href=/posts/destruction_by_default/>
+    <p>10-07-2025 </p>
+    <h4>Forced to be destructed </h4>
+    <p>I can't focus. Everything is buillt with destruction as a feature. </p>
+  </a>
+  <a class="post_box" href=/posts/good_life/>
+    <p>24-06-2025 </p>
+    <h4>The cost of a good life </h4>
+    <p>How to have a good, happy, healthy and successful life. </p>
+  </a>
+  <a class="post_box" href=/posts/originals/>
+    <p>20-06-2025 </p>
+    <h4>Seek Originals </h4>
+    <p>To learn about an idea, seek the originals. Consume art not content. </p>
+  </a>
+  <a class="post_box" href=/posts/good_stuff/>
+    <p>30-05-2025 </p>
+    <h4>Love the good stuff </h4>
+    <p>Don't let the good stuff pass un-appreciated </p>
+  </a>
+  <a class="post_box" href=/posts/red_flags/>
+    <p>07-04-2024 </p>
+    <h4>Don’t ignore minor red flags </h4>
+    <p>When you notice an undesirable act, don't ignore it. It might be a habit which is likely going to happen again. </p>
+  </a>
+  <a class="post_box" href=/posts/the_journey_teaches/>
+    <p>04-04-2025 </p>
+    <h4>The Journey Will Teach You </h4>
+    <p>There is no need to wait for knowledge and certainty. The journey will show you the way. </p>
+  </a>
+  <a class="post_box" href=/posts/ai_ease_speed/>
+    <p>03-04-2025 </p>
+    <h4>Artificial Intelligence, Ease and Speed </h4>
+    <p>Artificial Intelligence, like other innovations, is here to make our lives easier, if you use it correctly. </p>
+  </a>
+  <a class="post_box" href=/posts/slow_down/>
+    <p>22-03-2025 </p>
+    <h4>Slow down and be happy </h4>
+    <p>Don't be swallowed by work. Move slow accomplish more. </p>
+  </a>
+  <a class="post_box" href=/posts/productivity/>
+    <p>06-03-2025 </p>
+    <h4>How to be productive and get stuff done </h4>
+    <p>This is a simple guide on how to be productive and get stuff done. </p>
+  </a>
+  <a class="post_box" href=/posts/what_are_you_good_at/>
+    <p>01-03-2025 </p>
+    <h4>What are you good at </h4>
+    <p>You should aim to be excellent at something. Being exceptionally good will open many doors. </p>
+  </a>
+  <a class="post_box" href=/posts/weigh_decisions/>
+    <p>17-02-2025 </p>
+    <h4>Weigh your decisions against your goals </h4>
+    <p>Everything you do should be propeling you towards your goals. </p>
+  </a>
+  <a class="post_box" href=/posts/speak/>
+    <p>01-01-2025 </p>
+    <h4>Speak from fresh lips </h4>
+    <p>The way you speak to people should not be a habit. Speak from fresh lips always. </p>
+  </a>
+  <a class="post_box" href=/posts/luck/>
+    <p>21-12-2024 </p>
+    <h4>I saw 2 snakes in 3 days. I was lucky. </h4>
+    <p>You can manipulate luck. Be in the place where luck happens </p>
+  </a>
+  <a class="post_box" href=/posts/artist/>
+    <p>17-10-2024 </p>
+    <h4>The artist, in her own world </h4>
+    <p>Art is the work of a genuine heart, art is the true reflection of the artist. </p>
+  </a>
+  <a class="post_box" href=/posts/web_images_quality_and_speed/>
+    <p>10-10-2024 </p>
+    <h4>Web Images. Balancing Quality and Speed </h4>
+    <p>Handling images correctly in your website is very essential for better SEO and speed. </p>
+  </a>
+  <a class="post_box" href=/posts/you_have_the_keys/>
+    <p>22-09-2024 </p>
+    <h4>You have the keys </h4>
+    <p>The ablity to succeed depends on you, you have the power to accomplish whatever you want. </p>
+  </a>
+  <a class="post_box" href=/posts/write_about_anything/>
+    <p>16-09-2024 </p>
+    <h4>Write about anything </h4>
+    <p>Writing is not about formulating stories. You can just write about anything. </p>
+  </a>
+  <a class="post_box" href=/posts/how_to_deploy_a_laravel_website_on_digital_ocean/>
+    <p>08-09-2024 </p>
+    <h4>How to deploy a Laravel website on Digital Ocean </h4>
+    <p>This is a walk through tutorial on how to deploy a Laravel website on Digital Ocean </p>
+  </a>
+  <a class="post_box" href=/posts/limitless/>
+    <p>05-09-2024 </p>
+    <h4>Permitted limitations </h4>
+    <p>Your beliefs shape your reality. A positive mind, a positive life. </p>
+  </a>
+  <a class="post_box" href=/posts/learning_from_books/>
+    <p>21-04-2024 </p>
+    <h4>Learning from books </h4>
+    <p>TO get more from a book, one must treat each sentence as valuable as the entire book </p>
+  </a>
+  <a class="post_box" href=/posts/imposter/>
+    <p>17-04-2024 </p>
+    <h4>Imposter Syndrome is good </h4>
+    <p>Many developers try to fight imposter Syndrome, but it is actually good for your growth </p>
+  </a>
+  <a class="post_box" href=/posts/What_are_you_here_to_do/>
+    <p>20-03-2024 </p>
+    <h4>What are you here to do? asked my desk. </h4>
+    <p>A cure for laziness and a simple hack for productivity. </p>
+  </a>
+  <a class="post_box" href=/posts/You_should_use_Maps_instead_of_Objects_in_Javascript/>
+    <p>28-01-2024 </p>
+    <h4>You should use Maps instead of Objects in JavaScript </h4>
+    <p>There are may ways of storing related data in JavaScript, I prefer Maps. </p>
+  </a>
+  <a class="post_box" href=/posts/camel_case/>
+    <p>26-09-2023 </p>
+    <h4>My case against camelCase </h4>
+    <p>camelCase is obviously the most inefficient way of naming variables. </p>
+  </a>
+  <a class="post_box" href=/posts/bug/>
+    <p>24-09-2023 </p>
+    <h4>Save yourself from fixing bugs </h4>
+    <p>How we write code will determine how much we will have to fix bugs </p>
+  </a>
+  <a class="post_box" href=/posts/computers-dont-perform-miracles/>
+    <p>17-09-2023 </p>
+    <h4>Computers don't perform miracles </h4>
+    <p>How we explain technical concepts matters. </p>
+  </a>
+  <a class="post_box" href=/posts/there-is-more-than-just-console-log/>
+    <p>12-06-2023 </p>
+    <h4>There is more than just console.log(); </h4>
+    <p>Debugging javascript code shouldn't be hard. </p>
+  </a>
+  <a class="post_box" href=/posts/my-honest-take-on-code-igniter/>
+    <p>12-06-2023 </p>
+    <h4>My honest take on Code Igniter! </h4>
+    <p>My worst experiance since i started writting code. </p>
+  </a>
+  <a class="post_box" href=/posts/why-did-you-choose-that-framework/>
+    <p>08-06-2023 </p>
+    <h4>Why did you choose that framework? </h4>
+    <p>We have a bunch of choices to choose from but... </p>
+  </a>
+  <a class="post_box" href=/posts/be-careful-when-working-with-javascript-arrays/>
+    <p>27-05-2023 </p>
+    <h4>Be careful when working with JavaScript arrays! </h4>
+    <p>Javascript array methods don't do what you think they do! </p>
+  </a>
+  <a class="post_box" href=/posts/know_your_tools/>
+    <p>18-04-2023 </p>
+    <h4>Know your tools and you'll build great software </h4>
+    <p>clearly understand the tools you’re currently possessing </p>
+  </a>
 
-                <a class="post_box" href="/posts/work_never_ends/">
-                    <p>18-08-2025</p>
-                    <h4>Work never ends, forget the to-do list</h4>
-                    <p>You don't have to structure your day as if you had infinite time.</p>
-                </a>
-                <a class="post_box" href="/posts/originals/">
-                    <p>28-07-2025</p>
-                    <h4>Stack experiences not regret</h4>
-                    <p>We are afraid of trying new things, we fear to fail, we rob ourselves of experience</p>
-                </a>
-                <a class="post_box" href="/posts/who_you_are/">
-                    <p>12-07-2025</p>
-                    <h4>Be who you are</h4>
-                    <p>Your actions must resemble what you profess to be.</p>
-                </a>
-                <a class="post_box" href="/posts/destruction_by_default/">
-                    <p>10-07-2025</p>
-                    <h4>Forced to be destructed</h4>
-                    <p> I can't focus. Everything is buillt with destruction as a feature.</p>
-                </a>
-            </div>
-            <a class="btn-primary" href="/posts">See all posts</a>
-        </section>
-        <section style="display: flex; justify-content: center;">
-            <iframe src="https://kwanelegamedze.substack.com/embed" width="480" height="320"
-                style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
-        </section>
+        </div>
     </main>
     <footer class="footer">
         <div class="links">
@@ -195,8 +279,10 @@
                     alt="linkedin" /></a>
             <a href="https://twitter.com/coderkwan" target="_blank"><img src="/assets/twitter.png" alt="twitter" /></a>
         </div>
+
     </footer>
     <script src="/script.js"></script>
+    <script src="/subscribe.js"></script>
 </body>
 
 </html>

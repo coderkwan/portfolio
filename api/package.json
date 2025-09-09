@@ -1,15 +1,16 @@
 {
     "name": "api",
     "version": "1.0.0",
-    "main": "submit_contact.js",
+    "main": "server.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
-        "start": "node --watch submit_contact"
+        "start": "node --watch server"
     },
     "author": "",
     "license": "ISC",
     "description": "",
     "dependencies": {
+        "@libsql/client": "^0.15.15",
         "@supabase/supabase-js": "^2.45.4",
         "cors": "^2.8.5",
         "dotenv": "^16.4.5",
