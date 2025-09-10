@@ -70,7 +70,7 @@
             </div>
         </nav>
         <section class="each-post-page">
-            <div>
+            <div style="border-bottom: 1px solid gray; padding-bottom: 30px;">
                 <h1>Don’t ignore minor red flags</h1>
 <p><sup><em>07-04-2024</em><sup></p>
 <p>One day, while still working at a print-shop, a lady came in to print customized church envelopes. I noticed she was having challenges with her graphics designer who was suppose to send the designs to be printed on the envelopes. The designer was not responding quickly, the lady was chasing a deadline, the church envelopes must be printed today, it's Sunday tomorrow. The lady was furious.</p>
@@ -90,6 +90,16 @@ Maybe the previous designer was not the bad guy. Maybe the lady had developed a 
 Don’t ignore minor red flags.</p>
 
             </div>
+            <div class="hero_form" style="margin-top: 80px;">
+                <form id="subscribe_form">
+                    <div class="field">
+                        <label for="email">Get a mini-essay every Monday, Join My Newsletter!</label>
+                        <input class="input" type="email" name="email" placeholder="your@email.com" required>
+                    </div>
+                    <button class="btn" type="submit">Subscribe</button>
+                    <p id="form_update" style="display: none; font-size:16px"></p>
+                </form>
+            </div>
         </section>
     </main>
     <footer class="footer">
@@ -108,6 +118,7 @@ Don’t ignore minor red flags.</p>
         </div>
     </footer>
     <script src="/script.js"></script>
+    <script src="/subscribe.js"></script>
 </body>
 
 </html>

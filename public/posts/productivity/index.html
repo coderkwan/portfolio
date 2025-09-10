@@ -70,7 +70,7 @@
             </div>
         </nav>
         <section class="each-post-page">
-            <div>
+            <div style="border-bottom: 1px solid gray; padding-bottom: 30px;">
                 <h1>How to be productive and get stuff done</h1>
 <p><sup><em>06-03-2025</em><sup></p>
 <p>The ever-increasing number of productivity books, podcasts, talks and videos is a clear sign that a lot of us are struggling to get stuff done.
@@ -104,6 +104,16 @@ You must always ask yourself; Is there something important that I should be doin
 <p>There is a lot that has been shared about this topic. And it’s not every strategy that will work. The rescue plan is finding a system that works for you; we are wired differently. Being productive is a journey, it requires overcoming bad habits and creating new productivity habits. Be patient with yourself and take one step at a time.</p>
 
             </div>
+            <div class="hero_form" style="margin-top: 80px;">
+                <form id="subscribe_form">
+                    <div class="field">
+                        <label for="email">Get a mini-essay every Monday, Join My Newsletter!</label>
+                        <input class="input" type="email" name="email" placeholder="your@email.com" required>
+                    </div>
+                    <button class="btn" type="submit">Subscribe</button>
+                    <p id="form_update" style="display: none; font-size:16px"></p>
+                </form>
+            </div>
         </section>
     </main>
     <footer class="footer">
@@ -122,6 +132,7 @@ You must always ask yourself; Is there something important that I should be doin
         </div>
     </footer>
     <script src="/script.js"></script>
+    <script src="/subscribe.js"></script>
 </body>
 
 </html>

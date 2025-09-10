@@ -70,7 +70,7 @@
             </div>
         </nav>
         <section class="each-post-page">
-            <div>
+            <div style="border-bottom: 1px solid gray; padding-bottom: 30px;">
                 <h1>The cost of a good life</h1>
 <p><sup><em>24-06-2025</em><sup></p>
 <p>Having a good life is not easy. Being successful financially, in relationships, in health and in attaining happiness is not that cheap. There is a price to be paid. But this price is not unaffordable, everyone is able to start paying ASAP.</p>
@@ -93,6 +93,16 @@
 <p>Playing the game of life in comfort mode may give you mediocre results. But extreme results emerge when you take leaps of faith. Keep on taking risks. Not the ones that will lend you in jail or wipe your entire bank account. A good risk is one with 1% damage and 100% return.</p>
 
             </div>
+            <div class="hero_form" style="margin-top: 80px;">
+                <form id="subscribe_form">
+                    <div class="field">
+                        <label for="email">Get a mini-essay every Monday, Join My Newsletter!</label>
+                        <input class="input" type="email" name="email" placeholder="your@email.com" required>
+                    </div>
+                    <button class="btn" type="submit">Subscribe</button>
+                    <p id="form_update" style="display: none; font-size:16px"></p>
+                </form>
+            </div>
         </section>
     </main>
     <footer class="footer">
@@ -111,6 +121,7 @@
         </div>
     </footer>
     <script src="/script.js"></script>
+    <script src="/subscribe.js"></script>
 </body>
 
 </html>

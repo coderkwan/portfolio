@@ -1,7 +1,7 @@
 ---
 eleventyExcludeFromCollections: true
 layout: "index.njk"
-title: Posts by Kwanele Gamedze
+title: Blog posts by Kwanele Gamedze
 pagination:
   data: collections.posts
   size: 600

@@ -70,7 +70,7 @@
             </div>
         </nav>
         <section class="each-post-page">
-            <div>
+            <div style="border-bottom: 1px solid gray; padding-bottom: 30px;">
                 <h1>Work never ends, forget the to-do list</h1>
 <p><sup><em>18-08-2025</em><sup></p>
 <p>Traditional to-do lists might be contributing to burnout and unhappiness.
@@ -101,6 +101,16 @@ Or you can also <strong>schedule your destructions.</strong> It's better to have
 <p>I like <a href="https://ckarchive.com/b/xmuph6hrqdp04hrnppvnqc2le6lllbn">this idea</a> by Oliver Burkeman of constantly asking yourself; What would it mean to be done for the day?</p>
 
             </div>
+            <div class="hero_form" style="margin-top: 80px;">
+                <form id="subscribe_form">
+                    <div class="field">
+                        <label for="email">Get a mini-essay every Monday, Join My Newsletter!</label>
+                        <input class="input" type="email" name="email" placeholder="your@email.com" required>
+                    </div>
+                    <button class="btn" type="submit">Subscribe</button>
+                    <p id="form_update" style="display: none; font-size:16px"></p>
+                </form>
+            </div>
         </section>
     </main>
     <footer class="footer">
@@ -119,6 +129,7 @@ Or you can also <strong>schedule your destructions.</strong> It's better to have
         </div>
     </footer>
     <script src="/script.js"></script>
+    <script src="/subscribe.js"></script>
 </body>
 
 </html>
